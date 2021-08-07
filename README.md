@@ -1,43 +1,49 @@
-# Tematica del Market Place =>
+##
 
-    La tematica escogida es sobre la venta de video juegos en formato físico y digital, y Consolas de video juegos.
+### Temática del Market Place:
 
-### Descripcion de productos y/o servicios =>
+    La temática escogida es sobre la venta de video juegos en formato físico o digital y Consolas de video juegos.
+
+### Descripción de productos y/o servicios:
 
     Nos dedicamos a la venta de videojuegos en formato físico con sistema de envío o en formato digital con sistema de envío de claves (cdkey) por email. Las plataformas son PC, PS5, Nintento Switch, XBOX.
 
-### Publico al que apunta el sitio =>
+### Público al que apunta el sitio:
 
     Apuntamos a todo el público amante de los videos juegos.
 
-### Descripcion breve de integrantes =>
+### Descripción breve de integrantes:
 
-    { Ignacio = }
+    ```javascript
+    const integrantes = require('integrantes');
 
-    { Ignacio Martin = Programador Full Stack }
+    integrantes.Ignacio = `Programador Full Stack`;
 
-    { Juan Ignacio = }
+    integrantes.IgnacioMartin = `Programador Full Stack`;
+
+    integrantes.JuanIgnacio = `Programador Full Stack`;
+    ```
 
 ##
 
-# Paginas de referencia =>
+### Páginas de referencia:
 
-### G2A
+### [G2A](https://www.g2a.com/)
 
-    -
+    - Menu de categorías
 
-### ENEBA
+### [ENEBA](https://www.eneba.com/)
 
-    -
+    - Design color y barra lateral izquierda con opciones de busqueda
 
-### Kinguin
+### [Kinguin](https://www.kinguin.net/)
 
-    -
+    - Sistema de grilla para mostrar los juegos
 
-### GAMIVO
+### [GAMIVO](https://www.gamivo.com/)
 
-    -
+    - NavBar y sistema de Pre-Orders
 
-### K4G
+### [K4G](https://k4g.com/)
 
-    -
+    - Sistema de chat

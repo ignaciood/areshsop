@@ -6,7 +6,8 @@
 
 ### Descripción de productos y/o servicios:
 
-    Nos dedicamos a la venta de videojuegos en formato físico con sistema de envío o en formato digital con sistema de envío de claves (cdkey) por email. Las plataformas son PC, PS5, Nintento Switch, XBOX.
+    Nos dedicamos a la venta de videojuegos en formato físico con sistema de envío o en formato digital con sistema
+    de envío de claves (cdkey) por email. Las plataformas son PC, PS5, Nintento Switch, XBOX.
 
 ### Público al que apunta el sitio:
 
@@ -14,15 +15,16 @@
 
 ### Descripción breve de integrantes:
 
-    ```javascript
+```javascript
     const integrantes = require('integrantes');
+    
 
-    integrantes.Ignacio = `Programador Full Stack`;
+    integrantes.Ignacio = 'Programador Full Stack';
 
-    integrantes.IgnacioMartin = `Programador Full Stack`;
+    integrantes.IgnacioMartin = 'Programador Full Stack';
 
-    integrantes.JuanIgnacio = `Programador Full Stack`;
-    ```
+    integrantes.JuanIgnacio = 'Programador Full Stack';
+```
 
 ##
 

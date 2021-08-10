@@ -25,7 +25,7 @@
     integrantes.IgnacioMartin = 'Programador Full Stack';
 
     integrantes.JuanIgnacio = 'Programador Full Stack';
-
+```
 ##
 
 ### Páginas de referencia:

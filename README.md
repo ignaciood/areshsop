@@ -21,7 +21,7 @@
     const integrantes = require('integrantes');
     
 
-    integrantes.Ignacio = 'Programador Full Stack';
+    integrantes.Ignacio = 'Programador Full Stack, edad: 25, actualmente trabajando en Mercado Libre como Software Architect';
 
     integrantes.IgnacioMartin = 'Programador Full Stack';
 

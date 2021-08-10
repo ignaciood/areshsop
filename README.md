@@ -17,11 +17,11 @@
     ```javascript
     const integrantes = require('integrantes');
 
-    integrantes.Ignacio = `Programador Full Stack`;
+    integrantes.Ignacio = 'Programador Full Stack';
 
-    integrantes.IgnacioMartin = `Programador Full Stack`;
+    integrantes.IgnacioMartin = 'Programador Full Stack';
 
-    integrantes.JuanIgnacio = `Programador Full Stack`;
+    integrantes.JuanIgnacio = 'Programador Full Stack';
     ```
 
 ##

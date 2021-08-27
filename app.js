@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 
 // Create PORT variable with process.env
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Set public folder
 const staticFolder = path.resolve(__dirname, './public');

@@ -18,10 +18,10 @@ app.use(express.static(staticFolder));
 
 // Set Routes
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/index.html'));
+    res.sendFile(path.resolve(__dirname, './views/productDetails.html'));
 })
 
-// Config port listen
+// Config listening port
 app.listen(PORT, () => {
     console.log(`Server running on port: ${PORT}`);
 })

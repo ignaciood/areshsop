@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  margin: 0.5rem;
+  max-width: 1200px;
+  background-color: rgb(0, 3, 38);
+  border: 0;
+  vertical-align: baseline;
+  min-height: 100%;
+}
+
+#pd__wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+#pd__container {
+  width: 100%;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+/* BREADCRUMB */
+
+#breadcrumb__wrapper {
+  margin: 0.6rem;
+}
+.breadcrumb__container {
+  display: inline;
+  padding: 0.6rem;
+  background-color: rgba(165, 173, 177, 0.247);
+  border-radius: 26px;
+}
+.breadcrumb__container a {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #fff;
+}
+.bc__span {
+  font-size: 0.4rem;
+  margin: 0px 0.3rem;
+  cursor: default;
+  display: inline;
+  vertical-align: middle;
+}
+
+/* PRODUCT DETAIL CONTENT */
+.pd__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.product__img {
+  height: 444px;
+  flex: 2;
+}
+.product__img img {
+  width: 100%;
+  height: 444px;
+}
+.product__buy {
+  background-color: rgb(56, 56, 56);
+  flex: 1;
+  border-radius: 26px;
+  padding: 0.6rem;
+}
+
+#spec__wrapper {
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+#spec__container {
+  width: 100%;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.spec__menu {
+  width: 100%;
+  height: 46px;
+  margin: 0.6rem;
+  border-bottom: 1px solid rgba(128, 131, 161, 0.15);
+}
+.spec__menu a {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #fff;
+  margin-right: 1rem;
+}
+.spec__description {
+  margin-bottom: 1.3rem;
+}
+.spec__description__content {
+  background: rgb(23, 26, 60);
+  border-radius: 26px;
+  padding: 35px 40px;
+}
+.spec__req__content {
+  background: rgb(23, 26, 60);
+  border-radius: 26px;
+  padding: 35px 40px;
+}

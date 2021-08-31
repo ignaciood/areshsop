@@ -1,12 +1,10 @@
 :root {
-    --lightblue: #e30428;
-    --darkblue: #1D252C;
-    --grey: #82869A;
-    --lightgrey: #E5E5E5;
-    --lightviolet: #e30428;
-    --strongviolet: #e30428;
-    --fontcolor: #262626;
- }
+  --red: #e30428;
+  --darkblue: #1D252C;
+  --grey: #82869A;
+  --white: #E5E5E5;
+  --fontcolor: #262626;
+}
 
 .navbar {
     font-size: 15px;
@@ -90,7 +88,7 @@ text-decoration: none;
     display: flex;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
-    color: var(--lightgrey);
+    color: var(--grey);
     background-color: var(--fontcolor);
     border-top: 1px solid #313131;
   }
@@ -108,7 +106,7 @@ text-decoration: none;
     font-family: 'Courier', cursive;
     font-weight: 400;
     font-size: 20px;
-    color: var(--strongviolet);
+    color: var(--red);
   }
   
   .footer-addr h2 {
@@ -119,7 +117,7 @@ text-decoration: none;
   }
 
   .footer-addr h2::first-letter {
-     color: var(--lightviolet);
+     color: var(--red);
      text-decoration: underline;
   
   }
@@ -127,7 +125,7 @@ text-decoration: none;
   .nav-title {
     font-weight: 400;
     font-size: 15px;
-    color: var(--lightviolet);
+    color: var(--red);
   }
 
   .social-container {
@@ -145,7 +143,7 @@ text-decoration: none;
   }
 
   .fab:hover {
-    color: var(--lightblue);
+    color: var(--red);
   }
   
   .footer address {
@@ -154,7 +152,7 @@ text-decoration: none;
   }
 
   .footer address i {
-    color: var(--lightviolet);
+    color: var(--red);
     padding: 5px;
   }
 
@@ -249,4 +247,4 @@ text-decoration: none;
       flex: 2 0px;
     }
   }
-
+}

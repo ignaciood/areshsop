@@ -2,32 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
    
-    <nav class="">
-    <ul>
-        <li><a href="/login.html"><i class="registro"></i></a></li>
-        <li><a href="/register.html"><i class="registro"></i></a></li> 
-    </ul> 
-   </nav>
     <title>Areshop</title>
+    <link rel = "icon" href="/img/areshop_logo2.svg" type = "image/x-icon">
+
 </head>
-
-
 <body>
     <header>
-        <div>ARESHOP IS COMING SOON</div>
-</header>
-
+        <nav class="navbar">
+            <img src="/img/areshop_logo2.svg" class="logo2">
+            <div class="search">
+                <form action="/search" method="POST">
+                    <input class="search-input" id=search type="text" placeholder="Buscá tu producto" submit=search>
+                    <i class="search-icon fas fa-search"></i>
+                </form>
+            </div>
+            
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="/register" class="nav-links">
+                        <i class="far fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <div class="nav-links">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav-links">
+                        Juegos
+
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-links">
+                        Consolas
+
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-links">
+                        Digital
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="footer-addr">
+            <h1 class="footer-logo">ARESHOP</h1>
+            <h2>Contacto</h2>
+            
+            <address>
+                <i class="fas fa-map-marker-alt"></i> Siempre viva 742, Springfield |  <i class="fas fa-mobile-alt"></i> 11 1234 5678
+                <a class="footer-btn" href="mailto:areshop@gmail.com">Mail: <i class="far fa-envelope"></i> </a>
+            </address> 
+            
+            <div class="social-container">
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.google.com/intl/es-419/gmail/about/"><i class="fab fa-google-plus"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </div>
+            
+            
+        </div>
         
-    </footer>
+        <ul class="footer-nav">
+            
+        </li>
+        <li class="nav-item">
+            <h2 class="nav-title">Productos</h2>
+            
+            <ul class="nav-ul">
+                <li>
+                    <a href="#">Mas Vendidos</a>
+                </li>
+                
+                <li>
+                    <a href="#">Trending Topic</a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="nav-item">
+            <h2 class="nav-title">Support</h2>
+            
+            <ul class="nav-ul">
+                <li>
+                    <a href="#">Envios</a>
+                </li>
+                
+                <li>
+                    <a href="#">Help</a>
+                </li>
+                
+            </ul>
+        </li>
+        <li class="nav-item">
+            <h2 class="nav-title">Informacion</h2>
+            
+            <ul class="nav-ul">
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                
+                <li>
+                    <a href="#">Privacidad</a>
+                </li>
+                
+            </ul>
+        </li>
+    </ul>
+    
+    <div class="legal">
+        <p>&copy; 2021 Todos los derechos reservados.</p>
+        
+        <div class="legal-links">
+            <span>Areshop Team</span>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

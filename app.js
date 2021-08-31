@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 
 // Create PORT variable with process.env
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Set public folder
 const staticFolder = path.resolve(__dirname, './public');
@@ -34,5 +34,10 @@ app.get('/login', (req, res) => {
 // Config port listen
 app.listen(PORT, () => {
     console.log(`Server running on port: ${PORT}`);
+})
+
+// Set Routes
+app.get('/register', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/register.html'));
 })
 

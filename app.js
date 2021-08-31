@@ -21,6 +21,16 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/index.html'));
 })
 
+// Register Route
+app.get('/register', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/register.html'));
+})
+
+// Login Route
+app.get('/login', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/login.html'));
+})
+
 // Config port listen
 app.listen(PORT, () => {
     console.log(`Server running on port: ${PORT}`);

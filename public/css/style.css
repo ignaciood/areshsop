@@ -158,11 +158,7 @@
 
 /* NAVBAR CATEGORIES */
 .nav__categories {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--color1);
-  color: #fff;
+  display: none;
 }
 .nav__categories ul {
   display: flex;
@@ -211,5 +207,22 @@
 
   .footer-nav {
     flex: 2 0px;
+  }
+  .nav__categories {
+    padding-top: 1rem;
+    background-color: var(--color1);
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .nav__categories ul {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__categories {
+    justify-content: space-around;
+    flex-direction: row;
   }
 }

@@ -9,7 +9,6 @@
   --fontcolor: #262626;
 
   --bgcolor: #000326;
-
   --color1: #262626;
   --color2: rgb(163, 22, 33);
   --color3: #1f7a8c;
@@ -33,8 +32,9 @@
   margin: 1.3rem 0.6rem;
 }
 .breadcrumb__container {
-  display: inline;
-  padding: 0.6rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 .breadcrumb__container a {
   font-size: 0.8rem;
@@ -54,18 +54,16 @@
   color: var(--grey);
 }
 .breadcrumb__title {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  padding: 15px;
+  padding: 1rem 0;
 }
 
 /* PRODUCT DETAIL CONTENT */
 .pd__content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
   gap: 3rem;
-  margin: 1rem auto;
 }
 /* PRODUCT IMAGES */
 .product__img {
@@ -153,6 +151,7 @@
   min-height: 11%;
   border-top: 1px solid;
   flex-direction: column;
+  padding-bottom: 15px;
 }
 .rating {
   padding-top: 15px;
@@ -258,4 +257,70 @@
 .item {
   padding: 0 1.9rem;
   border-bottom: 1px solid #e0e0e0;
+}
+
+/* MEDIA QUERY*/
+
+@media screen and (min-width: 768px) {
+  .breadcrumb__title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+  }
+  .breadcrumb__container {
+    justify-content: flex-start;
+    padding: 0.6rem;
+  }
+
+  .pd__content {
+    align-items: center;
+  }
+  .product__buy {
+    width: 70%;
+    padding: 1.6rem 1rem;
+    flex-direction: column;
+  }
+
+  .req__content {
+    flex-flow: column nowrap;
+  }
+  #req__description h2 {
+    margin: 0;
+    text-align: center;
+  }
+  #spec__description h2 {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .breadcrumb__title {
+    text-align: left;
+  }
+  .pd__content {
+    flex-direction: row;
+  }
+  .product__buy {
+    width: 30%;
+    padding: 0.3rem 0.6rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .req__content {
+    flex-flow: row nowrap;
+  }
+  #req__description h2 {
+    margin: 0;
+    text-align: left;
+  }
+
+  .min__req {
+    flex: 1;
+  }
+  .max__req {
+    flex: 1;
+  }
 }

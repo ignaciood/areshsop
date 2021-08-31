@@ -5,19 +5,22 @@
   "main": "app.js",
   "scripts": {
     "start": "node app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "produ": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ignaciood/areshsop.git"
   },
-  "author": "",
+  "author": "group2",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ignaciood/areshsop/issues"
   },
   "homepage": "https://github.com/ignaciood/areshsop#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   }
 }

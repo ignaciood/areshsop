@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 
 // Create PORT variable with process.env
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Set public folder
 const staticFolder = path.resolve(__dirname, './public');
@@ -18,7 +18,15 @@ app.use(express.static(staticFolder));
 
 // Set Routes
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/productDetails.html'));
+    res.sendFile(path.resolve(__dirname, './views/index.html'));
+})
+
+app.get('/productdetails', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/productdetails.html'));
+})
+
+app.get('/pd', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/pd.html'));
 })
 
 // Config listening port

@@ -36,3 +36,8 @@ app.listen(PORT, () => {
     console.log(`Server running on port: ${PORT}`);
 })
 
+// Set Routes
+app.get('/register', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/register.html'));
+})
+

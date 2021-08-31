@@ -1,11 +1,8 @@
-/* Color palette */ 
 :root {
-    --lightblue: #e30428;
+    --red: #e30428;
     --darkblue: #1D252C;
     --grey: #82869A;
-    --lightgrey: #E5E5E5;
-    --lightviolet: #e30428;
-    --strongviolet: #e30428;
+    --white: #E5E5E5;
     --fontcolor: #262626;
  }
 
@@ -13,8 +10,6 @@
     font-family: Barlow, sans-serif;
   }
   
-/* Nav Bar Styles */
-
 .navbar {
     font-size: 15px;
     border: 1px solid rgba(166, 156, 241, 0.4);
@@ -83,7 +78,7 @@
   }
   
   .search-icon {
-    color: var(--lightblue);
+    color: var(--red);
     align-self: flex-end;
     padding-left: 10px;
 
@@ -100,7 +95,7 @@
   }
   
   .nav-links i {
-      color: var(--lightviolet);
+      color: var(--red);
   }
   
   #chkToggle {

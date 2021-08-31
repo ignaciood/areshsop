@@ -1,22 +1,16 @@
-/* Color palette */ 
 :root {
-  --lightblue: #e30428;
+  --red: #e30428;
   --darkblue: #1D252C;
   --grey: #82869A;
-  --lightgrey: #E5E5E5;
-  --lightviolet: #A69CF1;
-  --strongviolet: #7E33E0;
+  --white: #E5E5E5;
   --fontcolor: #262626;
 }
-
-
-/* footer*/
 
 .footer {
     display: flex;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
-    color: var(--lightgrey);
+    color: var(--grey);
     background-color: var(--fontcolor);
     border-top: 1px solid #313131;
   }
@@ -34,7 +28,7 @@
     font-family: 'Courier', cursive;
     font-weight: 400;
     font-size: 20px;
-    color: var(--strongviolet);
+    color: var(--red);
   }
   
   .footer-addr h2 {
@@ -45,7 +39,7 @@
   }
 
   .footer-addr h2::first-letter {
-     color: var(--lightviolet);
+     color: var(--red);
      text-decoration: underline;
   
   }
@@ -53,7 +47,7 @@
   .nav-title {
     font-weight: 400;
     font-size: 15px;
-    color: var(--lightviolet);
+    color: var(--red);
   }
 
   .social-container {
@@ -71,7 +65,7 @@
   }
 
   .fab:hover {
-    color: var(--lightblue);
+    color: var(--red);
   }
   
   .footer address {
@@ -80,7 +74,7 @@
   }
 
   .footer address i {
-    color: var(--lightviolet);
+    color: var(--red);
     padding: 5px;
   }
 
@@ -95,7 +89,7 @@
     border: 0.5px solid #E5E5E5;
     border-color:  var(--grey);
     line-height: 0;
-    margin: 0.8em 0;
+    margin: 0.9em 0;
     font-size: 1rem;
     padding: 5px 10px;
   }
@@ -152,13 +146,13 @@
     color: red;
   }
   
-  @media screen and (min-width: 390px) {
+  @media screen and (min-width: 400px) {
     .legal .legal-links {
       margin-left: auto;
     }
   }
   
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:780px) {
     .footer-nav > * {
       flex: 1;
     }
@@ -175,19 +169,3 @@
       flex: 2 0px;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

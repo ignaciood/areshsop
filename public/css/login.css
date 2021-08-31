@@ -37,56 +37,53 @@
       align-items: center;
       background-color: #232323;
     }
+
+    .head-registro{
+        font-size: 16px; 
+        color: white;
+        font-weight: 700;
+        text-decoration: none; 
+    }
     
-
-.titulo-registro {
-    line-height: 660%;
-    height: 130px;
-    text-align: center;
-    font-size: 30px;
-    width: 74%;
-}   
-.head-Inicio{
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    padding: 10px 30px 48px;
-    
-}
-.head-registro{
-    font-size: 16px;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;  
+.login-form{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 440px;
+    padding: 55px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 20px;
 }
 
-
-.registro-form{
-    width: 35% ;
-    margin:auto;
-    font-size: 14px;
-}
-
-
-.registro-form div{
+.login-form div{
     margin:25px 0px;
 }
 
-.registro-form div input{
-    width: 100%;
+.relleno{
+    width: 80%;
     border: 1px solid rgb(130, 130, 130);
     border-radius: 10px;
     padding: 15px 0px 15px 15px;
     font-size: 14px;
+    
 }
 
-.registro-form button {
+.login-form button {
     background-color: black;
     color: white;
     width: 30%;
     height: 30px;
 }
+
+.forgot-member{
+text-decoration: none;
+
+}
+.titulo-ingreso{
+    line-height: 11;
+    height: 130px;
+    text-align: center;
+    font-size: 30px;
+}  
 
 .footer {
     margin-top: 100px;

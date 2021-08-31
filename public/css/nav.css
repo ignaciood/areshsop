@@ -16,14 +16,18 @@ body {
 /* Nav Bar Styles */
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 15px;
   padding-bottom: 10px;
   background-color: var(--fontcolor);
 }
 
 .main-nav {
+  display: flex;
   list-style-type: none;
-  display: none;
+  padding: 0;
 }
 
 .nav-links,
@@ -33,7 +37,7 @@ body {
 }
 
 .logo2 {
-  width: 12%;
+  width: 15%;
   display: flex;
   justify-content: center;
 }
@@ -41,6 +45,7 @@ body {
 .main-nav li {
   text-align: center;
   margin: 15px auto;
+  padding: 0 10px;
 }
 
 .main-nav li a {
@@ -58,7 +63,7 @@ body {
 
 .search {
   display: flex;
-  width: 20%;
+  width: 50%;
   padding: 10px;
   border-radius: 20px;
   background-color: var(--plain-white);
@@ -74,6 +79,7 @@ body {
   width: 100%;
   border-radius: 20px;
   padding-left: 10px;
+  border: none;
 }
 
 .search input::placeholder {
@@ -84,7 +90,7 @@ body {
 
 .search-icon {
   color: var(--lightblue);
-  align-self: flex-end;
+  align-self: center;
   padding-left: 10px;
 }
 
@@ -134,7 +140,8 @@ body {
 
   .main-nav {
     display: flex;
-    margin-right: 30px;
+    padding-right: 30px;
+    padding-left: 0;
     flex-direction: row;
     justify-content: flex-end;
   }
@@ -148,7 +155,7 @@ body {
   }
 
   .nav-links {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   .logo {
@@ -167,5 +174,20 @@ body {
   .logo:hover,
   .nav-links i:hover {
     color: var(--grey);
+  }
+  .search {
+    width: 50%;
+  }
+  .search input {
+    padding: 10px 15px;
+  }
+  .search-icon {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .search {
+    width: 30%;
   }
 }

@@ -1,10 +1,12 @@
 :root {
-  --red: #e30428;
-  --darkblue: #1D252C;
-  --grey: #82869A;
-  --white: #E5E5E5;
-  --fontcolor: #262626;
-}
+    --lightblue: #e30428;
+    --darkblue: #1D252C;
+    --grey: #82869A;
+    --lightgrey: #E5E5E5;
+    --lightviolet: #e30428;
+    --strongviolet: #e30428;
+    --fontcolor: #262626;
+ }
 
 .navbar {
     font-size: 15px;
@@ -35,56 +37,53 @@
       align-items: center;
       background-color: #232323;
     }
+
+    .head-registro{
+        font-size: 16px; 
+        color: white;
+        font-weight: 700;
+        text-decoration: none; 
+    }
     
-
-.titulo-registro {
-    line-height: 660%;
-    height: 130px;
-    text-align: center;
-    font-size: 30px;
-    width: 74%;
-}   
-.head-Inicio{
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    padding: 10px 30px 48px;
-    
-}
-.head-registro{
-    font-size: 16px;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;  
+.login-form{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 440px;
+    padding: 55px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 20px;
 }
 
-
-.registro-form{
-    width: 35% ;
-    margin:auto;
-    font-size: 14px;
-}
-
-
-.registro-form div{
+.login-form div{
     margin:25px 0px;
 }
 
-.registro-form div input{
-    width: 100%;
+.relleno{
+    width: 80%;
     border: 1px solid rgb(130, 130, 130);
     border-radius: 10px;
     padding: 15px 0px 15px 15px;
     font-size: 14px;
+    
 }
 
-.registro-form button {
+.login-form button {
     background-color: black;
     color: white;
     width: 30%;
     height: 30px;
 }
+
+.forgot-member{
+text-decoration: none;
+
+}
+.titulo-ingreso{
+    line-height: 11;
+    height: 130px;
+    text-align: center;
+    font-size: 30px;
+}  
 
 .footer {
     margin-top: 100px;
@@ -109,7 +108,7 @@
     font-family: 'Courier', cursive;
     font-weight: 400;
     font-size: 20px;
-    color: var(--red);
+    color: var(--strongviolet);
   }
   
   .footer-addr h2 {
@@ -120,7 +119,7 @@
   }
 
   .footer-addr h2::first-letter {
-     color: var(--red);
+     color: var(--lightviolet);
      text-decoration: underline;
   
   }
@@ -128,7 +127,7 @@
   .nav-title {
     font-weight: 400;
     font-size: 15px;
-    color: var(--red);
+    color: var(--lightviolet);
   }
 
   .social-container {
@@ -146,7 +145,7 @@
   }
 
   .fab:hover {
-    color: var(--red);
+    color: var(--lightblue);
   }
   
   .footer address {
@@ -155,7 +154,7 @@
   }
 
   .footer address i {
-    color: var(--red);
+    color: var(--lightviolet);
     padding: 5px;
   }
 
@@ -170,7 +169,7 @@
     border: 0.5px solid #E5E5E5;
     border-color:  var(--grey);
     line-height: 0;
-    margin: 0.9em 0;
+    margin: 0.8em 0;
     font-size: 1rem;
     padding: 5px 10px;
   }
@@ -226,13 +225,14 @@
   .heart {
     color: red;
   }
-  @media screen and (min-width: 400px) {
+  
+  @media screen and (min-width: 390px) {
     .legal .legal-links {
       margin-left: auto;
     }
   }
   
-  @media screen and (min-width:780px) {
+  @media screen and (min-width:768px) {
     .footer-nav > * {
       flex: 1;
     }
@@ -249,4 +249,4 @@
       flex: 2 0px;
     }
   }
-}
+

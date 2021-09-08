@@ -25,10 +25,6 @@ app.get('/productdetails', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/productdetails.html'));
 })
 
-app.get('/pd', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/pd.html'));
-})
-
 // Config listening port
 app.listen(PORT, () => {
     console.log(`Server running on port: ${PORT}`);

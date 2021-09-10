@@ -4,6 +4,9 @@ const express = require('express');
 // Call path module
 const path = require('path');
 
+// Call routes
+const router = require('./routes/routes');
+
 // Build a express app
 const app = express();
 
@@ -16,14 +19,12 @@ const staticFolder = path.resolve(__dirname, './public');
 // Set app to use public folder
 app.use(express.static(staticFolder));
 
-// Set Routes
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/index.html'));
-})
+// Set View Engine EJS
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, './views'));
 
-app.get('/productdetails', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/productdetails.html'));
-})
+// Use Routes
+app.use('/', router);
 
 // Config listening port
 app.listen(PORT, () => {

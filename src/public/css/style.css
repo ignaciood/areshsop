@@ -185,22 +185,55 @@
 /* MAIN INDEX */
 .main__index {
   width: 80vw;
+  height: 100vh;
   margin: auto;
 }
 
 /* CARDS BEST SELLER */
 .bestseller__wrapper {
+  padding: 2rem;
 }
-
+.bestseller__title {
+  font-size: 1.3rem;
+  color: var(--strongviolet);
+}
 .cards__container {
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  gap: 25px;
 }
-
 .card__item {
+  max-height: 300px;
+  width: 250px;
 }
-
+.card__img {
+  height: 100%;
+}
+.card__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.card__content {
+  background-color: rebeccapurple;
+}
+.card__title {
+  padding: 10px;
+}
+.card__title a {
+  color: var(--lightgrey);
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-align: center;
+}
+@supports (object-fit: cover) {
+  .card__item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
 /* MEDIA QUERY*/
 @media screen and (min-width: 390px) {
   .legal .legal-links {

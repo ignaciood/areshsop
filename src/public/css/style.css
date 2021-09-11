@@ -182,30 +182,35 @@
   font-weight: bold;
 }
 
-/* MAIN INDEX */
+/* START MAIN INDEX */
 .main__index {
-  width: 80vw;
-  height: 100vh;
+  width: 100vw;
+  height: auto;
   margin: auto;
 }
 
-/* CARDS BEST SELLER */
+/* BEST SELLER CONTENT */
 .bestseller__wrapper {
-  padding: 2rem;
+  padding: 1rem;
 }
 .bestseller__title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--strongviolet);
+  text-align: center;
 }
+/* START CARDS */
 .cards__container {
   display: flex;
-  justify-content: space-between;
-  flex-flow: row nowrap;
-  gap: 25px;
+  justify-content: center;
+  flex-flow: column wrap;
+  gap: 10px;
+  align-items: center;
 }
 .card__item {
-  max-height: 300px;
-  width: 250px;
+  width: 90vw;
+  height: auto;
+
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .card__img {
   height: 100%;
@@ -215,25 +220,9 @@
   height: auto;
   border-radius: 6px;
 }
-.card__content {
-  background-color: rebeccapurple;
-}
-.card__title {
-  padding: 10px;
-}
-.card__title a {
-  color: var(--lightgrey);
-  text-decoration: none;
-  font-size: 1.3rem;
-  text-align: center;
-}
-@supports (object-fit: cover) {
-  .card__item img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-}
+/* START CARDS */
+/* END MAIN INDEX */
+
 /* MEDIA QUERY*/
 @media screen and (min-width: 390px) {
   .legal .legal-links {
@@ -268,10 +257,54 @@
   .nav__categories ul {
     padding: 0;
   }
+  /* START MAIN INDEX */
+  .main__index {
+    width: 100vw;
+  }
+  .bestseller__title {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .cards__container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+  .card__item {
+    height: 200px;
+  }
+  .card__item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  /* END MAIN INDEX */
 }
 @media screen and (min-width: 1200px) {
   .nav__categories {
     justify-content: space-around;
     flex-direction: row;
   }
+
+  /* START MAIN INDEX */
+  .bestseller__wrapper {
+    padding: 2rem;
+  }
+  .main__index {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+  }
+  .card__item {
+    height: 300px;
+    transition: 0.5s ease;
+  }
+
+  /* HOVER EFFECT IMG*/
+  .card__item:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+  }
+
+  /* END MAIN INDEX */
 }

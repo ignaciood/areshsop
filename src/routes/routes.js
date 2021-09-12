@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/productdetails', (req, res) => {
-    res.render('productdetails');
+    res.render('products/productdetails');
 })
 
 router.get('/cart', (req, res) => {
@@ -16,11 +16,11 @@ router.get('/cart', (req, res) => {
 })
 
 router.get('/login', (req, res) => {
-    res.render('login');
+    res.render('users/login');
 })
 
 router.get('/register', (req, res) => {
-    res.render('register');
+    res.render('users/register');
 })
 
 module.exports = router;

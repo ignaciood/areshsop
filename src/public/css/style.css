@@ -147,13 +147,8 @@
 .heart {
   color: red;
 }
-/* MAIN WRAPPER */
-.main-wrapper {
-  display: flex;
-  flex-direction: row;
-}
 
-/* NAVBAR CATEGORIES */
+/* START NAVBAR CATEGORIES */
 .nav__categories {
   display: none;
 }
@@ -181,6 +176,7 @@
   line-height: 1.6;
   font-weight: bold;
 }
+/* ENDS NAVBAR CATEGORIES */
 
 /* START MAIN INDEX */
 .main__index {
@@ -220,8 +216,8 @@
   height: auto;
   border-radius: 6px;
 }
-/* START CARDS */
-/* END MAIN INDEX */
+/* ENDS CARDS */
+/* ENDS MAIN INDEX */
 
 /* MEDIA QUERY*/
 @media screen and (min-width: 390px) {

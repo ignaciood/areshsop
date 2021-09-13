@@ -179,10 +179,14 @@
 /* ENDS NAVBAR CATEGORIES */
 
 /* START MAIN INDEX */
+.body__index {
+  background-image: url(/img/index-background-image.jpg);
+}
 .main__index {
   width: 100vw;
   height: auto;
   margin: auto;
+  background-color: #fff;
 }
 
 /* BEST SELLER CONTENT */
@@ -190,9 +194,14 @@
   padding: 1rem;
 }
 .bestseller__title {
-  font-size: 1.2rem;
-  color: var(--strongviolet);
+  font-size: 1.8rem;
+  color: #fff;
   text-align: center;
+  font-weight: bold;
+  background-color: var(--strongviolet);
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border-radius: 0 15px 0 15px;
 }
 /* START CARDS */
 .cards__container {
@@ -283,14 +292,21 @@
   }
 
   /* START MAIN INDEX */
-  .bestseller__wrapper {
-    padding: 2rem;
-  }
   .main__index {
     width: 80vw;
     height: auto;
     margin: auto;
   }
+
+  .bestseller__wrapper {
+    padding: 2rem;
+  }
+  .bestseller__title {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
   .card__item {
     height: 300px;
     transition: 0.5s ease;

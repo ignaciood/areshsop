@@ -22,6 +22,7 @@ body {
   font-size: 15px;
   padding-bottom: 10px;
   background-color: var(--fontcolor);
+  overflow: hidden;
 }
 
 .main-nav {

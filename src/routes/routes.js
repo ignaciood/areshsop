@@ -12,7 +12,7 @@ router.get('/productdetails', (req, res) => {
 })
 
 router.get('/cart', (req, res) => {
-    res.render('cart');
+    res.render('users/cart');
 })
 
 router.get('/login', (req, res) => {

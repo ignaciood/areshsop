@@ -148,7 +148,7 @@
   font-weight: bold;
   padding: 10px;
 }
-.chckout__span__price {
+.checkout__span__price {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 5px;
@@ -171,4 +171,46 @@
   padding: 10px;
   width: 50%;
   border-radius: 7px;
+}
+
+/* MEDIA QUERYS*/
+@media screen and (min-width: 768px) {
+  .main__cart {
+    display: flex;
+    flex-direction: column;
+  }
+  .cart__navbar {
+    margin: 15px;
+    justify-content: space-around;
+  }
+  .cart__container {
+    width: 70vw;
+    align-self: center;
+  }
+  .cart__discount {
+    align-self: center;
+  }
+  .cart__checkout__container {
+    width: 70vw;
+    align-self: center;
+  }
+  .cart__checkout__total {
+    justify-content: center;
+    align-items: baseline;
+  }
+  .cart__checkout button {
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cart__checkout__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cart__checkout__total {
+    align-self: center;
+  }
+  .cart__checkout button {
+    width: 200px;
+  }
 }

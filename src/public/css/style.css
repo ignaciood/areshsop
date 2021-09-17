@@ -178,56 +178,6 @@
 }
 /* ENDS NAVBAR CATEGORIES */
 
-/* START MAIN INDEX */
-.body__index {
-  background-image: url(/img/index-background-image.jpg);
-}
-.main__index {
-  width: 100vw;
-  height: auto;
-  margin: auto;
-  background-color: #fff;
-}
-
-/* BEST SELLER CONTENT */
-.bestseller__wrapper {
-  padding: 1rem;
-}
-.bestseller__title {
-  font-size: 1.8rem;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  background-color: var(--strongviolet);
-  padding: 5px 10px;
-  margin-bottom: 15px;
-  border-radius: 0 15px 0 15px;
-}
-/* START CARDS */
-.cards__container {
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  gap: 10px;
-  align-items: center;
-}
-.card__item {
-  width: 90vw;
-  height: auto;
-
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-.card__img {
-  height: 100%;
-}
-.card__img img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-/* ENDS CARDS */
-/* ENDS MAIN INDEX */
-
 /* MEDIA QUERY*/
 @media screen and (min-width: 390px) {
   .legal .legal-links {
@@ -251,6 +201,7 @@
   .footer-nav {
     flex: 2 0px;
   }
+  /* START NAVBAR CATEGORIES */
   .nav__categories {
     padding-top: 1rem;
     background-color: var(--fontcolor);
@@ -262,61 +213,13 @@
   .nav__categories ul {
     padding: 0;
   }
-  /* START MAIN INDEX */
-  .main__index {
-    width: 100vw;
-  }
-  .bestseller__title {
-    font-size: 1.3rem;
-    text-align: left;
-  }
-  .cards__container {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
-  }
-  .card__item {
-    height: 200px;
-  }
-  .card__item img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-  /* END MAIN INDEX */
+  /* ENDS NAVBAR CATEGORIES */
 }
 @media screen and (min-width: 1200px) {
+  /* START NAVBAR CATEGORIES */
   .nav__categories {
     justify-content: space-around;
     flex-direction: row;
   }
-
-  /* START MAIN INDEX */
-  .main__index {
-    width: 80vw;
-    height: auto;
-    margin: auto;
-  }
-
-  .bestseller__wrapper {
-    padding: 2rem;
-  }
-  .bestseller__title {
-    font-size: 1.6rem;
-    color: #fff;
-    padding: 10px 20px;
-  }
-
-  .card__item {
-    height: 300px;
-    transition: 0.5s ease;
-  }
-
-  /* HOVER EFFECT IMG*/
-  .card__item:hover {
-    transform: scale(1.1);
-    transition: 0.5s ease;
-  }
-
-  /* END MAIN INDEX */
+  /* ENDS NAVBAR CATEGORIES */
 }

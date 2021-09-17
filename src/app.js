@@ -1,11 +1,11 @@
 // Call express module
 const express = require('express');
-
 // Call path module
 const path = require('path');
-
 // Call routes
-const router = require('./routes/routes');
+const mainRouter = require('./routes/mainRoutes');
+// Call override method
+const methodOverride = require('method-override');
 
 // Build a express app
 const app = express();
@@ -19,12 +19,21 @@ const staticFolder = path.resolve(__dirname, './public');
 // Set app to use public folder
 app.use(express.static(staticFolder));
 
+// Set app to use encoded
+app.use(express.urlencoded({ extended: false }));
+
+// Set app to use json pharse
+app.use(express.json());
+
+// Set app to override method on form
+app.use(methodOverride('_method')); // method="POST" on form to use PUT y DELETE
+
 // Set View Engine EJS
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 
 // Use Routes
-app.use('/', router);
+app.use('/', mainRouter);
 
 // Config listening port
 app.listen(PORT, () => {

@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <%- include('partials/head') -%>
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
   </head>
 
   <body class="body__index">
@@ -14,53 +15,8 @@
         </div>
 
         <div class="cards__container">
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/fifa22_cover.jpg" alt="" />
-              </a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/DMC_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/DS3_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/GTAV_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/MHW_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/Tarkov_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
+          <% products.forEach(function(products){ %> <%-
+          include('partials/productCard', {products}) %> <% }); %>
         </div>
       </section>
 
@@ -68,54 +24,10 @@
         <div class="bestseller__title">
           <span>Mas Valorados</span>
         </div>
+
         <div class="cards__container">
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/Cyberpunk_cover.jpeg" alt="" />
-              </a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/DMC_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/DS3_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/GTAV_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/MHW_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
-
-          <div class="card__item">
-            <div class="card__img">
-              <a href="/productdetails">
-                <img src="/img/products/Tarkov_cover.jpg" alt=""
-              /></a>
-            </div>
-          </div>
+          <% products.forEach(function(products){ %> <%-
+          include('partials/productCard', {products}) %> <% }); %>
         </div>
       </section>
     </main>

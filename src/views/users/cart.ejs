@@ -4,7 +4,7 @@
     <%- include('../partials/head') -%>
     <link rel="stylesheet" href="./css/cart.css" type="text/css" />
   </head>
-  <body>
+  <body class="body__cart">
     <%- include('../partials/header') -%>
     <main class="main__cart">
       <section class="cart__navbar">
@@ -21,25 +21,35 @@
           <div class="cart__product__img">
             <img src="/img/products/fifa22_cover.jpg" alt="" />
           </div>
-          <div class="cart__product__title"><span>FIFA 22</span></div>
-        </div>
-
-        <div class="cart__product__buy">
-          <div class="cart__item__price">
-            <span class="span__name">Precio</span>
-            <span class="span__price">$2.555</span>
-          </div>
-          <div class="cart__item__count">
-            <button><i class="fas fa-minus"></i></button>
-            <input type="text" name="cart-item-count" placeholder="1" />
-            <button><i class="fas fa-plus"></i></button>
-          </div>
-
-          <div class="cart__item__delete">
-            <i class="far fa-trash-alt"></i>
+          <div class="cart__content">
+            <div class="cart__product__title"><span>FIFA 22</span></div>
+            <div class="cart__product__rating">
+              <span>Rating</span>
+            </div>
+            <div class="cart__product__category">
+              <span>Category</span>
+            </div>
+            <div class="cart__product__description">
+              <span>Description</span>
+            </div>
+            <div class="cart__product__buy">
+              <div class="cart__item__price">
+                <span class="span__name">Precio</span>
+                <span class="span__price">$2.555</span>
+              </div>
+              <div class="cart__item__count">
+                <button><i class="fas fa-minus"></i></button>
+                <input type="text" name="cart-item-count" placeholder="1" />
+                <button><i class="fas fa-plus"></i></button>
+              </div>
+              <div class="cart__item__delete">
+                <i class="far fa-trash-alt"></i>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <section class="cart__checkout__container">
         <div class="cart__discount">
           <input

@@ -1,58 +1,56 @@
-{
-    "products": [
-        {
-            "id": "1",
-            "name": "FIFA 21",
-            "description": "Juego de Futbol",
-            "image": "/img/",
-            "category": "Deportes",
-            "price": "2.555",
-            "rating": "4"
-        },
-        {
-            "id": "2",
-            "product-name": "DMC: Devil May Cry",
-            "description": "Juego de Futbol",
-            "image": "/img/",
-            "category": "Accion",
-            "price": "2.555",
-            "rating": "4"
-        },
-        {
-            "id": "3",
-            "product-name": "Dark Souls III",
-            "description": "Juego de Futbol",
-            "image": "/img/",
-            "category": "Accion",
-            "price": "2.555",
-            "rating": "4"
-        },
-        {
-            "id": "4",
-            "product-name": "Grand Theft Auto V",
-            "description": "Juego de Futbol",
-            "image": "/img/",
-            "category": "Accion",
-            "price": "2.555",
-            "rating": "4"
-        },
-        {
-            "id": "5",
-            "product-name": "Monster Hunter: World",
-            "description": "Juego de Futbol",
-            "image": "/img/",
-            "category": "Accion",
-            "price": "2.555",
-            "rating": "4"
-        },
-        {
-            "id": "6",
-            "product-name": "Escape From Tarkov",
-            "description": "Juego de Futbol",
-            "image": "/img/",
-            "category": "Shooter",
-            "price": "2.555",
-            "rating": "4"
-        }
-    ]
-}
+[
+    {
+        "id": "1",
+        "name": "FIFA 21",
+        "description": "Juego de Futbol",
+        "image": "/img/",
+        "category": "Deportes",
+        "price": "2.555",
+        "rating": "4"
+    },
+    {
+        "id": "2",
+        "product-name": "DMC: Devil May Cry",
+        "description": "Juego de Futbol",
+        "image": "/img/",
+        "category": "Accion",
+        "price": "2.555",
+        "rating": "4"
+    },
+    {
+        "id": "3",
+        "product-name": "Dark Souls III",
+        "description": "Juego de Futbol",
+        "image": "/img/",
+        "category": "Accion",
+        "price": "2.555",
+        "rating": "4"
+    },
+    {
+        "id": "4",
+        "product-name": "Grand Theft Auto V",
+        "description": "Juego de Futbol",
+        "image": "/img/",
+        "category": "Accion",
+        "price": "2.555",
+        "rating": "4"
+    },
+    {
+        "id": "5",
+        "product-name": "Monster Hunter: World",
+        "description": "Juego de Futbol",
+        "image": "/img/",
+        "category": "Accion",
+        "price": "2.555",
+        "rating": "4"
+    },
+    {
+        "id": "6",
+        "product-name": "Escape From Tarkov",
+        "description": "Juego de Futbol",
+        "image": "/img/",
+        "category": "Shooter",
+        "price": "2.555",
+        "rating": "4"
+    }
+]

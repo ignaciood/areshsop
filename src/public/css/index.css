@@ -50,6 +50,7 @@
   object-position: center center;
 }
 .card__content {
+  height: auto;
 }
 .card__title {
   font-size: 1.3rem;

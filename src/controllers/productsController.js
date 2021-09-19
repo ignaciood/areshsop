@@ -6,14 +6,8 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller = {
     // Root - Show all products
-    index: (req, res) => {
-        res.render('index', { products });
-    },
-
-    // Cart
-    cart: (req, res) => {
-        res.render('cart')
-
+    list: (req, res) => {
+        res.render('products/productsList', { products });
     },
 
     // Detail - Detail from one product

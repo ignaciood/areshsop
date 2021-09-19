@@ -2,25 +2,22 @@ const express = require('express');
 
 const router = express.Router();
 
-const productsController = require('../controllers/productsController');
+const mainController = require('../controllers/mainController');
 
 // Set Routes
-router.get('/', productsController.index);
+// Index Route
+router.get('/', mainController.index);
 
-router.get('/productdetails', (req, res) => {
-    res.render('products/productdetails');
-})
+// Product Details Route
+router.get('/productDetails', mainController.detail);
 
-router.get('/cart', (req, res) => {
-    res.render('users/cart');
-})
+// Cart Details Route
+router.get('/cart', mainController.cart);
 
-router.get('/login', (req, res) => {
-    res.render('users/login');
-})
+// Login Route
+router.get('/login', mainController.login);
 
-router.get('/register', (req, res) => {
-    res.render('users/register');
-})
+// Register Route
+router.get('/register', mainController.register);
 
 module.exports = router;

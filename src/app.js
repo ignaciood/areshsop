@@ -4,8 +4,11 @@ const express = require('express');
 const path = require('path');
 // Call routes
 const mainRouter = require('./routes/mainRoutes');
+const productsRouter = require('./routes/productsRoutes');
 // Call override method
 const methodOverride = require('method-override');
+// Call Id generation module
+const { uuid } = require('uuidv4');
 
 // Build a express app
 const app = express();
@@ -33,7 +36,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 
 // Use Routes
+// Main Routes
 app.use('/', mainRouter);
+// Products Routers
+app.use('/products', productsRouter);
 
 // Config listening port
 app.listen(PORT, () => {

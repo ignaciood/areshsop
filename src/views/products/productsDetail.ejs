@@ -14,11 +14,13 @@
         </div>
       </div>
       <div>
-        <p>Products List</p>
+        <p>Product Detail</p>
       </div>
-      <div class="cards__container">
-        <% products.forEach(function(products){ %> <%- include('./productsCard',
-        {products}) %> <% }); %>
+      <div>
+        <%= productDetailById.name %> <%= productDetailById.description %> <%=
+        productDetailById.image %> <%= productDetailById.category %> <%=
+        productDetailById.rating %> <%= productDetailById.platform %> <%=
+        productDetailById.price %>
       </div>
     </main>
     <%- include('../partials/footer') -%>

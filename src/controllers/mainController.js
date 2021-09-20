@@ -1,4 +1,6 @@
+// Call FileSystem module
 const fs = require('fs');
+// Call Path module
 const path = require('path');
 
 const productsFilePath = path.join(__dirname, '../database/products.json');

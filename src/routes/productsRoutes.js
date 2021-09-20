@@ -8,6 +8,13 @@ const productsController = require('../controllers/productsController');
 // Product Details Route
 router.get('/', productsController.list);
 
+// Product Details Route
+router.get('/productdetail/:id', productsController.detail);
 
+// Product Create Route
+router.get('/create', productsController.create);
+
+// Product Catch Data from Create Form Route
+router.post('/store', productsController.store);
 
 module.exports = router;

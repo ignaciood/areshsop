@@ -5,8 +5,9 @@
         "description": "Juego de Futbol",
         "image": "fifa22_cover.jpg",
         "category": "Deportes",
-        "price": "2.555",
-        "rating": "4"
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
     },
     {
         "id": "2",
@@ -14,8 +15,9 @@
         "description": "Juego de Futbol",
         "image": "DMC_cover.jpg",
         "category": "Accion",
-        "price": "2.555",
-        "rating": "4"
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
     },
     {
         "id": "3",
@@ -23,8 +25,9 @@
         "description": "Juego de Futbol",
         "image": "DS3_cover.jpg",
         "category": "Accion",
-        "price": "2.555",
-        "rating": "4"
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
     },
     {
         "id": "4",
@@ -32,8 +35,9 @@
         "description": "Juego de Futbol",
         "image": "GTAV_cover.jpg",
         "category": "Accion",
-        "price": "2.555",
-        "rating": "4"
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
     },
     {
         "id": "5",
@@ -41,8 +45,9 @@
         "description": "Juego de Futbol",
         "image": "MHW_cover.jpg",
         "category": "Accion",
-        "price": "2.555",
-        "rating": "4"
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
     },
     {
         "id": "6",
@@ -50,7 +55,8 @@
         "description": "Juego de Futbol",
         "image": "Tarkov_cover.jpg",
         "category": "Shooter",
-        "price": "2.555",
-        "rating": "4"
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
     }
 ]

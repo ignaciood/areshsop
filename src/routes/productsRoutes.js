@@ -9,7 +9,7 @@ const productsController = require('../controllers/productsController');
 router.get('/', productsController.list);
 
 // Product Details Route
-router.get('/productdetail/:id', productsController.detail);
+router.get('/:id', productsController.detail);
 
 // Product Create Route
 router.get('/create', productsController.create);

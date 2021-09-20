@@ -11,16 +11,21 @@
         <div><input type="search" /><button>Search</button></div>
         <div>
           <a href="/products/create"><button>Create New Product</button></a>
+          <a href="/products"><button>List Products</button></a>
         </div>
       </div>
       <div>
         <p>Product Detail</p>
       </div>
       <div>
-        <%= productDetailById.name %> <%= productDetailById.description %> <%=
-        productDetailById.image %> <%= productDetailById.category %> <%=
-        productDetailById.rating %> <%= productDetailById.platform %> <%=
-        productDetailById.price %>
+        <!-- prettier-ignore -->
+        <%= product.name %>
+        <%= product.description %>
+        <%= product.image %>
+        <%= product.category %>
+        <%= product.rating %>
+        <%= product.platform %>
+        <%= product.price %>
       </div>
     </main>
     <%- include('../partials/footer') -%>

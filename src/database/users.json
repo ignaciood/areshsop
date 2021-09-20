@@ -1,0 +1,11 @@
+[
+    {
+        "id": "1",
+        "firstName": "Max",
+        "lastName": "Power",
+        "emial": "maxpower@rlz.com",
+        "password": "madmax",
+        "access": "root",
+        "userImage": "maxpower.jpg"
+    }
+]

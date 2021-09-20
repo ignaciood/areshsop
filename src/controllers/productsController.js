@@ -17,7 +17,7 @@ const controller = {
     // Detail - Detail from one product
     detail: (req, res) => {
         const detailProductById = products.find(element => element.id === req.params.id);
-        res.render('products/productsDetail', { detailProductById });
+        res.render('products/productsDetail', { product: detailProductById });
     },
 
     // Create - Form to create
@@ -43,8 +43,7 @@ const controller = {
         // Write JSON DataBase file
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 4), { encoding: "utf-8" });
         // Render created Product by ID
-        const newProductId = newProduct.id;
-        res.render('products/productsDetail', { newProductId });
+        res.render('products/productsDetail', { product: newProduct });
     },
 
     // Update - Form to edit

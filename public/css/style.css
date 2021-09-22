@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root {
   --red: #e30428;
   --darkblue: #1D252C;
@@ -10,10 +9,12 @@
 }
 
 .navbar {
-    font-size: 15px;
-    border: 1px solid rgba(166, 156, 241, 0.4);
-    padding-bottom: 10px;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  height: 90px;
+  align-items: center;
+}
   
   .logo2 {
     width: 12%;
@@ -26,68 +27,67 @@
     width: 20%;
     padding: 10px;
     border-radius:20px;
-    background-color: var(--plain-white);
+    background-color: var(--white);
   }
-  
-  @media screen and (min-width: 768px) {
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 90px;
-      align-items: center;
-      background-color: #232323;
-    }
-    
 
-.titulo-registro {
-    line-height: 660%;
-    height: 130px;
-    text-align: center;
-    font-size: 30px;
-    width: 74%;
-}   
-.head-Inicio{
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    padding: 10px 30px 48px;
-    
-}
-.head-registro{
-    font-size: 16px;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;  
-}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 90px;
+    align-items: center;
+  }
 
 
-.registro-form{
-    width: 35% ;
-    margin:auto;
-    font-size: 14px;
-}
+  .titulo-registro {
+      line-height: 660%;
+      height: 130px;
+      text-align: center;
+      font-size: 30px;
+      width: 74%;
+  }
+  .head-Inicio{
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      padding: 10px 30px 48px;
+
+  }
+  .head-registro{
+      font-size: 16px;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+  }
 
 
-.registro-form div{
-    margin:25px 0px;
-}
+  .registro-form{
+      width: 35% ;
+      margin:auto;
+      font-size: 14px;
+  }
 
-.registro-form div input{
-    width: 100%;
-    border: 1px solid rgb(130, 130, 130);
-    border-radius: 10px;
-    padding: 15px 0px 15px 15px;
-    font-size: 14px;
-}
 
-.registro-form button {
-    background-color: black;
-    color: white;
-    width: 30%;
-    height: 30px;
-}
+  .registro-form div{
+      margin:25px 0px;
+  }
+
+  .registro-form div input{
+      width: 100%;
+      border: 1px solid rgb(130, 130, 130);
+      border-radius: 10px;
+      padding: 15px 0px 15px 15px;
+      font-size: 14px;
+  }
+
+  .registro-form button {
+      background-color: black;
+      color: white;
+      width: 30%;
+      height: 30px;
+  }
 
 .footer {
     margin-top: 100px;
@@ -268,7 +268,7 @@
 }
 
 .footer address i {
-  color: var(--re);
+  color: var(--red);
   padding: 5px;
 }
 
@@ -372,12 +372,6 @@
   font-weight: bold;
 }
 
-/* MEDIA QUERY*/
-@media screen and (min-width: 390px) {
-  .legal .legal-links {
-    margin-left: auto;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .footer-nav > * {

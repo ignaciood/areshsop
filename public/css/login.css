@@ -7,10 +7,13 @@
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 15px;
-    border: 1px solid rgba(166, 156, 241, 0.4);
     padding-bottom: 10px;
-  }
+    background-color: var(--fontcolor);
+}
   
   .logo2 {
     width: 12%;
@@ -23,17 +26,15 @@
     width: 20%;
     padding: 10px;
     border-radius:20px;
-    background-color: var(--plain-white);
   }
-  
-  @media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
     .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 90px;
-      align-items: center;
-      background-color: #232323;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 90px;
+        align-items: center;
     }
 
     .head-registro{
@@ -43,55 +44,55 @@
         text-decoration: none; 
     }
     
-.login-form{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 440px;
-    padding: 55px;
-    border: 1px solid rgba(0,0,0,0.4);
-    border-radius: 20px;
-}
+    .login-form{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 440px;
+        padding: 55px;
+        border: 1px solid var(--red);
+        border-radius: 20px;
+    }
 
-.login-form div{
-    margin:25px 0px;
-}
+    .login-form div{
+        margin:25px 0px;
+    }
 
-.relleno{
-    width: 80%;
-    border: 1px solid rgb(130, 130, 130);
-    border-radius: 10px;
-    padding: 15px 0px 15px 15px;
-    font-size: 14px;
-    
-}
+    .relleno{
+        width: 80%;
+        border: 1px solid rgb(130, 130, 130);
+        border-radius: 10px;
+        padding: 15px 0px 15px 15px;
+        font-size: 14px;
 
-.login-form button {
-    background-color: black;
-    color: white;
-    width: 30%;
-    height: 30px;
-}
+    }
 
-.forgot-member{
-text-decoration: none;
+    .login-form button {
+        background-color: black;
+        color: white;
+        width: 30%;
+        height: 30px;
+    }
 
-}
-.titulo-ingreso{
-    line-height: 11;
-    height: 130px;
-    text-align: center;
-    font-size: 30px;
-}  
+    .forgot-member{
+    text-decoration: none;
 
-.footer {
-    margin-top: 100px;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
-    color: var(--grey);
-    background-color: var(--fontcolor);
-    border-top: 1px solid #313131;
-  }
+    }
+    .titulo-ingreso{
+        line-height: 11;
+        height: 130px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .footer {
+        margin-top: 100px;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 30px 30px 20px 30px;
+        color: var(--grey);
+        background-color: var(--fontcolor);
+        border-top: 1px solid #313131;
+      }
   
   .footer > * {
     flex:  1 100%;
@@ -223,26 +224,26 @@ text-decoration: none;
   .heart {
     color: red;
   }
-  
+
   @media screen and (min-width: 390px) {
     .legal .legal-links {
       margin-left: auto;
     }
   }
-  
+
   @media screen and (min-width:768px) {
     .footer-nav > * {
       flex: 1;
     }
-    
+
     .nav-item--extra {
       flex-grow: 2;
     }
-    
+
     .footer-addr {
       flex: 1 0px;
     }
-    
+
     .footer-nav {
       flex: 2 0px;
     }

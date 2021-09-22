@@ -17,7 +17,7 @@ const staticFolder = path.resolve(__dirname, './public');
 app.use(express.static(staticFolder));
 
 // Set Routes
-app.get('/', (req, res) => {
+app.get('/index', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/index.html'));
 })
 
@@ -41,18 +41,15 @@ app.get('/pd', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/pd.html'));
 })
 
-// Config listening port
-app.listen(PORT, () => {
-    console.log(`Server running on port: ${PORT}`);
-})
-
-// Set Routes
-app.get('/register', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/register.html'));
-})
 
 // Set Routes
 app.get('/carrito', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/carrito.html'));
+})
+
+
+// Config listening port
+app.listen(PORT, () => {
+    console.log(`Server running on port: ${PORT}`);
 })
 

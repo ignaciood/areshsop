@@ -1,62 +1,62 @@
 [
     {
-        "id": "1",
+        "id": "b93574b3-b428-4c8b-be22-00d5df87ba11",
         "name": "FIFA 21",
         "description": "Juego de Futbol",
-        "image": "fifa22_cover.jpg",
-        "category": "Deportes",
-        "rating": "4",
+        "image": "image-1632368689538-8235850211945-fifa22_cover.jpg",
+        "category": "deportes",
+        "rating": "5",
         "platform": "PC",
-        "price": "2.555"
+        "price": "2550"
     },
     {
-        "id": "2",
+        "id": "093a39bd-3255-416c-a476-0e5afd001cd4",
         "name": "DMC: Devil May Cry",
-        "description": "Juego de Futbol",
-        "image": "DMC_cover.jpg",
+        "description": "Juego de Aventura",
+        "image": "image-1632369531263-9285745813212-DMC_cover.jpg",
         "category": "Accion",
-        "rating": "4",
+        "rating": "5",
         "platform": "PC",
-        "price": "2.555"
+        "price": "2345"
     },
     {
-        "id": "3",
+        "id": "557c6531-c6d4-48a0-8b18-220eddf0333d",
         "name": "Dark Souls III",
-        "description": "Juego de Futbol",
-        "image": "DS3_cover.jpg",
+        "description": "Juego de Accion y Rol",
+        "image": "image-1632369597704-8867046118525-DS3_cover.jpg",
         "category": "Accion",
         "rating": "4",
         "platform": "PC",
-        "price": "2.555"
+        "price": "2152"
     },
     {
-        "id": "4",
+        "id": "fcc39eb2-9520-4e12-ad09-5758e1dceee8",
         "name": "Grand Theft Auto V",
-        "description": "Juego de Futbol",
-        "image": "GTAV_cover.jpg",
+        "description": "Juego de Aventura",
+        "image": "image-1632369630760-6607925474558-GTAV_cover.jpg",
         "category": "Accion",
-        "rating": "4",
+        "rating": "5",
         "platform": "PC",
-        "price": "2.555"
+        "price": "2275"
     },
     {
-        "id": "5",
+        "id": "b8aa1a29-8e5e-4df2-b9d4-b8389baa69a6",
         "name": "Monster Hunter: World",
-        "description": "Juego de Futbol",
-        "image": "MHW_cover.jpg",
+        "description": "Juego de Aventura",
+        "image": "image-1632369757476-4881064031348-MHW_cover.jpg",
         "category": "Accion",
-        "rating": "4",
+        "rating": "1",
         "platform": "PC",
-        "price": "2.555"
+        "price": "2453"
     },
     {
-        "id": "6",
+        "id": "bd491752-12c4-47e6-8817-5a77114061cc",
         "name": "Escape From Tarkov",
-        "description": "Juego de Futbol",
-        "image": "Tarkov_cover.jpg",
+        "description": "Juego de Accion",
+        "image": "image-1632369803709-292818567404-Tarkov_cover.jpg",
         "category": "Shooter",
         "rating": "4",
         "platform": "PC",
-        "price": "2.555"
+        "price": "2290"
     }
 ]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('../partials/head') -%>
+  </head>
+
+  <body>
+    <%- include('../partials/header') -%>
+    <main>
+      <div class="navbar-products">
+        <div><input type="search" /><button>Search</button></div>
+        <div>
+          <a href="/products/create"><button>Create New Product</button></a>
+        </div>
+      </div>
+      <div>
+        <p>Products List</p>
+      </div>
+      <div class="cards__container">
+        <% products.forEach(function(products){ %> <%- include('./productsCard',
+        {products}) %> <% }); %>
+      </div>
+    </main>
+    <%- include('../partials/footer') -%>
+  </body>
+</html>

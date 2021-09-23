@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "name": "FIFA 22",
+        "description": "Juego de Futbol",
+        "image": "fifa22_cover.jpg",
+        "category": "Deportes",
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
+    },
+    {
+        "id": "2",
+        "name": "DMC: Devil May Cry",
+        "description": "Juego de Futbol",
+        "image": "DMC_cover.jpg",
+        "category": "Accion",
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
+    },
+    {
+        "id": "3",
+        "name": "Dark Souls III",
+        "description": "Juego de Futbol",
+        "image": "DS3_cover.jpg",
+        "category": "Accion",
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
+    },
+    {
+        "id": "4",
+        "name": "Grand Theft Auto V",
+        "description": "Juego de Futbol",
+        "image": "GTAV_cover.jpg",
+        "category": "Accion",
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
+    },
+    {
+        "id": "5",
+        "name": "Monster Hunter: World",
+        "description": "Juego de Futbol",
+        "image": "MHW_cover.jpg",
+        "category": "Accion",
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
+    },
+    {
+        "id": "6",
+        "name": "Escape From Tarkov",
+        "description": "Juego de Futbol",
+        "image": "Tarkov_cover.jpg",
+        "category": "Shooter",
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
+    }
+]

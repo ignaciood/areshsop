@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('partials/head') -%>
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+  </head>
+
+  <body class="body__index">
+    <%- include('partials/header') -%>
+
+    <main class="main__index">
+      <section class="bestseller__wrapper">
+        <div class="bestseller__title">
+          <span>Mas vendidos</span>
+        </div>
+
+        <div class="cards__container">
+          <% products.forEach(function(products){ %> <%-
+          include('partials/mainCard', {products}) %> <% }); %>
+        </div>
+      </section>
+
+      <section class="bestseller__wrapper">
+        <div class="bestseller__title">
+          <span>Mas Valorados</span>
+        </div>
+
+        <div class="cards__container">
+          <% products.forEach(function(products){ %> <%-
+          include('partials/mainCard', {products}) %> <% }); %>
+        </div>
+      </section>
+    </main>
+    <%- include('partials/footer') -%>
+  </body>
+</html>

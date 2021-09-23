@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('../partials/head') -%>
+  </head>
+
+  <body>
+    <%- include('../partials/header') -%>
+    <main>
+      <div class="navbar-products">
+        <div><input type="search" /><button>Search</button></div>
+        <div>
+          <a href="/products/create"><button>Create New Product</button></a>
+          <a href="/products"><button>List Products</button></a>
+        </div>
+      </div>
+      <div>
+        <p>Product Detail</p>
+      </div>
+      <div>
+        <!-- prettier-ignore -->
+        <%= product.name %>
+        <%= product.description %>
+        <%= product.image %>
+        <%= product.category %>
+        <%= product.rating %>
+        <%= product.platform %>
+        <%= product.price %>
+      </div>
+    </main>
+    <%- include('../partials/footer') -%>
+  </body>
+</html>

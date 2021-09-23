@@ -1,6 +1,6 @@
 /* START MAIN INDEX */
 .body__index {
-  background-image: url(/img/index-background-image.jpg);
+  background-image: url(/img/background-img.jpg);
 }
 
 .main__index {
@@ -23,10 +23,10 @@
 }
 .bestseller__title {
   font-size: 1.8rem;
-  color: #fff;
-  text-align: center;
+  color: white;
+  text-align: left;
   font-weight: bold;
-  background-color: var(--strongviolet);
+  background-color: var(--red);
   padding: 5px 10px;
   margin-bottom: 15px;
   border-radius: 0 15px 0 15px;
@@ -40,10 +40,8 @@
   align-items: center;
 }
 .card__item {
-  width: 60vw;
-  height: auto;
+  width: 110vw;
   background-color: #ddd;
-  padding: 10px;
   border-radius: 7px;
   box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
 }
@@ -78,6 +76,8 @@
   .bestseller__title {
     font-size: 1.3rem;
     text-align: left;
+    background-color: var(--red);
+    color: white;
   }
   .cards__container {
     display: flex;
@@ -85,10 +85,10 @@
     flex-flow: row nowrap;
   }
   .card__item {
-    height: 280px;
+    height: 180px;
   }
   .card__img {
-    height: 210px;
+    height: 110px;
   }
   .card__item img {
     height: 100%;
@@ -110,8 +110,11 @@
   }
   .bestseller__title {
     font-size: 1.6rem;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
+    text-align: left;
+    background-color: var(--red);
+
   }
   .card__item {
     height: 360px;
@@ -121,6 +124,8 @@
   .card__item:hover {
     transform: scale(1.1);
     transition: 0.5s ease;
+    box-shadow: 10px 10px 8px 0px rgba(50, 50, 50, 0.75);
+
   }
   /* ENDS HOVER EFFECT IMG*/
   .card__img {

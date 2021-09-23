@@ -10,6 +10,14 @@
     background-color: #fff;
 }
 
+.main__register button{
+    background-color: black;
+}
+
+.main__register button:hover{
+    background-color: #e30428;
+}
+
 /* LOGO */
 .logo {
     width: 10%;

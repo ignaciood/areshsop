@@ -226,7 +226,7 @@
 /* MEDIA QUERYS*/
 @media screen and (min-width: 768px) {
   .body__cart {
-    background-image: url(/img/index-background-image.jpg);
+    background-image: url(/img/background-img.jpg);
   }
   .main__cart {
     display: flex;

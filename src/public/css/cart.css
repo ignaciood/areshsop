@@ -46,6 +46,11 @@
   background-color: var(--strongviolet);
 }
 
+.nav-text{
+  color:red;
+  font-weight: bold;
+}
+
 
 .button-home button {
   color: var(--strongviolet);

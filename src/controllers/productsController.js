@@ -5,6 +5,7 @@ const path = require('path');
 // Call Id generation module
 const { uuid } = require('uuidv4');
 
+
 const productsFilePath = path.join(__dirname, '../database/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
@@ -29,7 +30,7 @@ const controller = {
     store: (req, res) => {
         // Product Database Schema and catch data from create product form
         const newProduct = {
-            id: uuid(),
+            id: v4(),
             name: req.body.name,
             description: req.body.description,
             image: req.file.filename,
@@ -38,6 +39,7 @@ const controller = {
             platform: req.body.platform,
             price: req.body.price
         };
+
         // Add new Product to the array JSON DataBase
         products.push(newProduct);
         // Write JSON DataBase file
@@ -60,5 +62,6 @@ const controller = {
         // Do the magic
     }
 };
+
 
 module.exports = controller;

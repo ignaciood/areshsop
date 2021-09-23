@@ -36,7 +36,7 @@ app.set('views', path.join(__dirname, './views'));
 // Use Routes
 // Main Routes
 app.use('/', mainRouter);
-// Products Routers
+// Products Routers for Admins
 app.use('/products', productsRouter);
 
 // Config listening port

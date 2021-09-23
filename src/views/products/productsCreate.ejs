@@ -13,14 +13,28 @@
         </div>
       </div>
       <div>
-        <form action="" method="post" enctype="multipart/form-data">
+        <form
+          action="/products/store"
+          method="post"
+          enctype="multipart/form-data"
+        >
           <div><input type="text" name="name" /></div>
           <div><input type="text" name="description" /></div>
           <div><input type="file" name="image" /></div>
           <div><input type="text" name="category" /></div>
-          <div><input type="text" name="rating" /></div>
+          <div>
+            <label for="rating">Rating:</label>
+            <select name="rating">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
           <div><input type="text" name="platform" /></div>
           <div><input type="text" name="price" /></div>
+
           <div><input type="submit" value="Create" /></div>
           <div><input type="reset" value="Reset" /></div>
         </form>

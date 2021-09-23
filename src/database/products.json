@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "name": "FIFA 22",
+        "description": "Es un videojuego de simulación de fútbol desarrollado por EA Canada y publicado por EA Sports",
+        "image": "fifa22_cover.jpg",
+        "category": "Deportes",
+        "rating": "5",
+        "platform": "PC",
+        "price": "6.555"
+    },
+    {
+        "id": "2",
+        "name": "DMC: Devil May Cry",
+        "description": "Es un videojuego de hack and slash y beat 'em up desarrollado por Ninja Theory y distribuido por Capcom",
+        "image": "DMC_cover.jpg",
+        "category": "Accion",
+        "rating": "4",
+        "platform": "PC",
+        "price": "5.555"
+    },
+    {
+        "id": "3",
+        "name": "Dark Souls III",
+        "description": "Es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment ",
+        "image": "DS3_cover.jpg",
+        "category": "Rol/Accion",
+        "rating": "4",
+        "platform": "PC",
+        "price": "4.200"
+    },
+    {
+        "id": "4",
+        "name": "Grand Theft Auto V",
+        "description": "Es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games",
+        "image": "GTAV_cover.jpg",
+        "category": "Accion/Aventura",
+        "rating": "4",
+        "platform": "PC",
+        "price": "3.500"
+    },
+    {
+        "id": "5",
+        "name": "Monster Hunter: World",
+        "description": "Es un videojuego perteneciente al género de rol y acción, desarrollado y publicado por la empresa Capcom, siendo el sexto título principal de la franquicia de videojuegos Monster Hunter",
+        "image": "MHW_cover.jpg",
+        "category": "Accion/Rol",
+        "rating": "4",
+        "platform": "PC",
+        "price": "5.000"
+    },
+    {
+        "id": "6",
+        "name": "Escape From Tarkov",
+        "description": "Es un simulador de combate que mezcla acción en primera persona con elementos RPG dentro de un MMO con desarrollo narrativo. También hay quien lo considera un videojuego de suspense debido a la tensión característica de ese juego, semejante a la que provocan juegos de terror o suspenso",
+        "image": "Tarkov_cover.jpg",
+        "category": "Combate",
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.000"
+    }
+]

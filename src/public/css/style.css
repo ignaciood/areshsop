@@ -39,56 +39,6 @@
     align-items: center;
   }
 
-
-  .titulo-registro {
-      line-height: 660%;
-      height: 130px;
-      text-align: center;
-      font-size: 30px;
-      width: 74%;
-  }
-  .head-Inicio{
-      font-size: 16px;
-      text-decoration: none;
-      color: white;
-      font-weight: 700;
-      padding: 10px 30px 48px;
-
-  }
-  .head-registro{
-      font-size: 16px;
-      color: white;
-      font-weight: 700;
-      text-decoration: none;
-  }
-
-
-  .registro-form{
-      width: 35% ;
-      margin:auto;
-      font-size: 14px;
-  }
-
-
-  .registro-form div{
-      margin:25px 0px;
-  }
-
-  .registro-form div input{
-      width: 100%;
-      border: 1px solid rgb(130, 130, 130);
-      border-radius: 10px;
-      padding: 15px 0px 15px 15px;
-      font-size: 14px;
-  }
-
-  .registro-form button {
-      background-color: black;
-      color: white;
-      width: 30%;
-      height: 30px;
-  }
-
 .footer {
     margin-top: 100px;
     display: flex;
@@ -98,34 +48,34 @@
     background-color: var(--fontcolor);
     border-top: 1px solid #313131;
   }
-  
+
   .footer > * {
     flex:  1 100%;
   }
-  
+
   .footer-addr {
     margin-right: 1.25em;
     margin-bottom: 0.5em;
   }
-  
+
   .footer-logo {
     font-family: 'Courier', cursive;
     font-weight: 400;
     font-size: 20px;
     color: var(--red);
   }
-  
+
   .footer-addr h2 {
     margin-top: 1.3em;
     font-size: 18px;
     font-weight: 400;
-  
+
   }
 
   .footer-addr h2::first-letter {
      color: var(--red);
      text-decoration: underline;
-  
+
   }
 
   .nav-title {
@@ -137,7 +87,7 @@
   .fab:hover {
     color: var(--red);
   }
-  
+
   .footer address {
     font-style: normal;
     color: var(--grey);

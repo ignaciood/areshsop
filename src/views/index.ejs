@@ -15,8 +15,14 @@
         </div>
 
         <div class="cards__container">
+          <div class="triangulo izquierda">
+            <div></div>
+          </div>
           <% products.forEach(function(products){ %> <%-
           include('partials/mainCard', {products}) %> <% }); %>
+            <div class="triangulo derecha">
+              <div></div>
+            </div>
         </div>
       </section>
       <section class="bestseller__wrapper">
@@ -25,10 +31,17 @@
         </div>
 
         <div class="cards__container">
+          <div class="triangulo izquierda">
+            <div></div>
+          </div>
           <% products.forEach(function(products){ %> <%-
           include('partials/mainCard', {products}) %> <% }); %>
+            <div class="triangulo derecha">
+              <div></div>
+            </div>
         </div>
       </section>
+
     </main>
     <%- include('partials/footer') -%>
   </body>

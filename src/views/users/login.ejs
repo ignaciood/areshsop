@@ -8,13 +8,14 @@
   <body class="body__login">
     <%- include('../partials/header_login') -%>
     <main class="main__login">
+      <div class="titulo-registro">INGRESAR</div>
       <form action="/home" method="POST" class="registro-form">
         <div>
-          <label class="email">Email Address</label>
+          <label class="email">EMAIL ADDRESS</label>
           <input type="email" required name="email" placeholder="Username" autocomplete="email" class="relleno">
         </div>
         <div>
-          <label class="PASSWORD">Password</label>
+          <label class="PASSWORD">PASSWORD</label>
           <input type="password" required name="password" placeholder="Password" autocomplete="current-password" class="relleno">
         </div>
         <button type="submit" name="button">SIGN IN</button>

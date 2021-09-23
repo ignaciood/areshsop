@@ -58,5 +58,15 @@
         "rating": "4",
         "platform": "PC",
         "price": "2.555"
+    },
+    {
+        "id": "7",
+        "name": "Farcry 6",
+        "description": "Juego de Accion",
+        "image": "farcry6.jpg",
+        "category": "adventure",
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.555"
     }
 ]

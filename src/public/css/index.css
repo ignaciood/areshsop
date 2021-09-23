@@ -40,7 +40,7 @@
   align-items: center;
 }
 .card__item {
-  width: 110vw;
+  width: 120vw;
   background-color: #ddd;
   border-radius: 7px;
   box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
@@ -64,6 +64,40 @@
   text-align: center;
   padding: 10px;
 }
+
+.triangulo {
+  border-style: solid;
+  border-width: 18px;
+  width: 0;
+  height: 0;
+
+}
+.triangulo>div {
+  border-style: solid;
+  border-width: 10px;
+  width: 0;
+  height: 0;
+  position:relative;
+}
+
+.triangulo.derecha{
+  border-color: transparent transparent transparent #e30428;
+}
+.triangulo.derecha>div {
+  border-color: transparent transparent transparent white;
+  top:-10px;
+  left:-21px;
+}
+
+.triangulo.izquierda{
+  border-color: transparent #e30428 transparent transparent;
+}
+.triangulo.izquierda>div {
+  border-color: transparent white transparent transparent;
+  top:-10px;
+  left:1px;
+}
+
 /* ENDS CARDS */
 /* ENDS MAIN INDEX */
 

@@ -54,9 +54,10 @@
   border: solid var(--strongviolet) 2px;
   text-decoration: none;
   background-color: var(--white);
+  font-weight: bold;
 }
 .button-home button:hover {
-  color: var(--strongviolet);
+  color: var(--white);
   border: solid var(--strongviolet) 2px;
   background-color: #e30428;
 }

@@ -80,6 +80,11 @@
   position:relative;
 }
 
+.nav-text{
+  color:red;
+  font-weight: bold;
+}
+
 .triangulo.derecha{
   border-color: transparent transparent transparent #e30428;
 }

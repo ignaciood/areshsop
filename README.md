@@ -28,7 +28,7 @@
 ```
 ##
 
-### Jira del Team:
+### [Tablero de trabajo](https://areshsop.atlassian.net/jira/software/projects/SN/boards/2)
 
 ```javascript
     const jira = require('jira');

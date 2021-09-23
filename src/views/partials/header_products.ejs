@@ -1,0 +1,42 @@
+<header>
+  <nav class="navbar">
+    <img src="/img/areshop_logo2.svg" class="logo" />
+    <div class="search">
+      <form action="/search" method="POST">
+        <input
+          class="search-input"
+          id="search"
+          type="text"
+          placeholder="Buscá tu producto"
+          submit="search"
+        />
+        <i class="search-icon fas fa-search"></i>
+      </form>
+    </div>
+
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="/products/create" class="nav-links">
+          <span class="nav-text">Add Product</span>
+          <i class="fas fa-plus"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/login" class="nav-links">
+          <span class="nav-text"> Sign In</span>
+          <i class="fas fa-sign-in-alt"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/register" class="nav-links">
+          <i class="fas fa-user-plus"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/cart" class="nav-links">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

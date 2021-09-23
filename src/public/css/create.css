@@ -1,20 +1,20 @@
-/* START MAIN REGISTER */
-.body__register {
+/* START MAIN CREATE */
+.body__create {
     background-color: white ;
 }
 
-.main__register {
+.main__create {
     width: 100vw;
     height: auto;
     margin: auto;
     background-color: #fff;
 }
 
-.main__register button{
+.main__create button{
     background-color: black;
 }
 
-.main__register button:hover{
+.main__create button:hover{
     background-color: #e30428;
 }
 
@@ -76,13 +76,14 @@
 }
 
 
-.registro-form{
+
+.create-form{
     width: 35% ;
     margin:auto;
     font-size: 14px;
 }
 
-.titulo-registro {
+.titulo-create {
     line-height: 660%;
     height: 130px;
     text-align: center;
@@ -95,16 +96,11 @@
     font-weight: bold;
 }
 
-.cards__container{
-    color: black;
-
-}
-
-.registro-form div{
+.create-form div{
     margin:25px 0px;
 }
 
-.registro-form div input{
+.create-form div input{
     width: 100%;
     border: 1px solid rgb(130, 130, 130);
     border-radius: 10px;
@@ -112,14 +108,14 @@
     font-size: 14px;
 }
 
-.registro-form button {
+.create-form button {
     background-color: black;
     color: white;
     width: 30%;
     height: 30px;
 }
 
-.registro-form button:hover {
+.create-form button:hover {
     background-color: var(--red);
     color: white;
     width: 30%;
@@ -131,7 +127,7 @@
 /* MEDIA QUERY*/
 @media screen and (min-width: 768px) {
     /* START MAIN REGISTER */
-    .main__register {
+    .main__create {
         width: 100vw;
     }
     .bestseller__title {
@@ -159,7 +155,7 @@
 }
 @media screen and (min-width: 1200px) {
     /* START MAIN REGISTER */
-    .main__register {
+    .main__create {
         width: 80vw;
         height: auto;
         margin: auto;

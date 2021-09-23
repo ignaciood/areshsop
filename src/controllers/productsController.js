@@ -3,7 +3,7 @@ const fs = require('fs');
 // Call Path module
 const path = require('path');
 // Call Id generation module
-const { uuid } = require('uuidv4');
+const shortid = require('shortid')
 
 
 const productsFilePath = path.join(__dirname, '../database/products.json');
@@ -30,10 +30,10 @@ const controller = {
     store: (req, res) => {
         // Product Database Schema and catch data from create product form
         const newProduct = {
-            id: v4(),
+            id: shortid.generate(),
             name: req.body.name,
             description: req.body.description,
-            image: req.file.filename,
+            image: "req.body.filename()",
             category: req.body.category,
             rating: req.body.rating,
             platform: req.body.platform,

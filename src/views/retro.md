@@ -63,6 +63,7 @@
 
 > Por ultimo, creemos que no estamos teniendo mucha comunicaicon a la hora de hacer el trabajo de cada uno, si bien nos comunicamos en la division de tareas, a la hora de trabajar no lo estamos haciendo. 
 
+
 # Sprint N3
 
 ## Empezar a hacer: 
@@ -81,10 +82,9 @@
 > Estar a disposicion para trabjar, por mas que arrancamos tarde, se nota que le estamos metiendo bien.
 
 
-
 ## Hacer igual:
 
-> 
+> Tener la capacidad de afontar los problemas y encarar el proyecto nuevamente. 
 
 
 ## Hacer menos: 

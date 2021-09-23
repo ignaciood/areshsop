@@ -86,10 +86,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 10px;
 }
 .cart__product__title {
   font-size: 2rem;
-  padding: 5px;
 }
 .cart__product__description {
   display: none;
@@ -97,9 +97,8 @@
 .cart__product__buy {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  padding: 15px;
+  width: 280%;
 }
 .cart__item__price {
   display: flex;
@@ -118,8 +117,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 25%;
+  width: 8%;
 }
 .cart__item__count input[type="text"] {
   border: none;
@@ -134,6 +132,26 @@
   border: none;
   font-size: 1.3rem;
   cursor: pointer;
+}
+
+.cart__product__description {
+  display: block;
+  color: var(--red);
+  font-weight: bold ;
+}
+
+.cart__product__category{
+  color: black;
+  font-weight: bold ;
+}
+
+.span__name{
+  color: var(--red);
+  font-size: 16px;
+}
+
+.cart__product__rating {
+  color: var(--red);
 }
 .cart__item__totalprice {
   display: flex;

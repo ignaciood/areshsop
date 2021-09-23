@@ -17,8 +17,8 @@ const controller = {
 
     // Detail - Detail from one product
     detail: (req, res) => {
-        const detailProductById = products.find(element => element.id === req.params.id);
-        res.render('products/productsDetail', { product: detailProductById });
+        const imgProductById = products.find(element => element.id === req.params.id);
+        res.render('products/productsDetail', { product: imgProductById });
     },
 
     // Create - Form to create

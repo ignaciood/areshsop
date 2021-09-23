@@ -91,7 +91,7 @@
 
 > Pudimos reconocer que podríamos tener menos individualidades, si bien trabajamos cada uno con su parte, por ahí nos estamos ligando a el trabajo del otro. En vez de ir analizando y compartiendo opiniones en el medio del trabajo y ahorrar tiempo, lo estamos haciendo al final del proyecto. 
 
-> No leer el sprint todos juntos y dividir las tareas. 
+> No leer el sprint todos juntos y dividir las tareas. Asi poder encarar mejor las tareas.
 
 ## Dejar de hacer:
 

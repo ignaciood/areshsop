@@ -4,7 +4,7 @@
 
 ### Impedimientos:
 
-    Falta de tiempo y poca comunicación en el mismo.
+    Falta de tiempo y poca comunicación en el grupo.
 
 ### Que se va a realizar:
 

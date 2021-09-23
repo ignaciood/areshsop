@@ -15,7 +15,7 @@
 
     Apuntamos a todo el público amante de los videos juegos.
 
-### Descripción breve de integrantes:
+### Descripción integrantes:
 
 ```javascript
     const integrantes = require('integrantes');
@@ -25,6 +25,15 @@
     integrantes.IgnacioMartin = 'Programador Full Stack';
 
     integrantes.JuanIgnacio = 'Programador Full Stack';
+```
+##
+
+### Jira del Team:
+
+```javascript
+    const jira = require('jira');
+    
+    jira.grupo2 = 'https://areshsop.atlassian.net/jira/software/projects/SN/boards/2';
 ```
 ##
 

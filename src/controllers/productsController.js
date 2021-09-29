@@ -33,7 +33,7 @@ const controller = {
             id: shortid.generate(),
             name: req.body.name,
             description: req.body.description,
-            image: "req.body.filename()",
+            image: req.file.filename,
             category: req.body.category,
             rating: req.body.rating,
             platform: req.body.platform,

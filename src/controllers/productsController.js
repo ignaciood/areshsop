@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 // Call Id generation module
 const shortid = require('shortid')
-let database = require("../database/products.json")
+
 
 const productsFilePath = path.join(__dirname, '../database/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -51,47 +51,48 @@ const controller = {
     // Update - Form to edit
     edit: (req, res) => {
         const id = req.params.id;
-        const imgProductById = database.findIndex((item) => item.id === id);
-        const{name, description, category, rating, platform,price} = req.body;
-        products[imgProductById]={
+        const imgProductById = products.findIndex((item) => item.id === id);
+        const { name, description, category, rating, platform, price } = req.body;
+
+        products[imgProductById] = {
             id: id,
             name: name,
             description: description,
-            image: "req.body.filename()",   
+            image: "image",
             category: category,
             rating: rating,
             platform: platform,
             price: price
         };
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 4), { encoding: "utf-8" });
-        res.render('products/productsEdit', { products : imgProductById});
+        res.render('products/productsList', { products });
     },
     // Update - Method to update
     getEdit: (req, res) => {
         const id = req.params.id;
         const imgProductById = products.find((item) => item.id === id);
         res.render('products/productsEdit', { products: imgProductById });
-      
+
     },
 
     // Delete - Delete one product from DB
     delete: (req, res) => {
         const id = req.params.id;
-         database = database.filter((item) => item.id != id);
-         fs.writeFileSync(
+        const newProducts = products.filter((item) => item.id != id);
+
+
+        fs.writeFileSync(
             path.join(__dirname, '../database/products.json'),
-            JSON.stringify(db, null, 4),
+            JSON.stringify(newProducts, null, 4),
             {
-              encoding: "utf8",
+                encoding: "utf8",
             }
-          );;
-        
-        
-        res.render('products/productsList', {  products: database });
-      }
-    };
-    
-  
+        );;
+
+
+        res.render('products/productsList', { products: newProducts });
+    }
+};
 
 
 module.exports = controller;

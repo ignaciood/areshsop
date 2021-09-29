@@ -1,13 +1,13 @@
 [
     {
         "id": "1",
-        "name": "FIFA 22",
+        "name": "FIFA 222",
         "description": "Es un videojuego de simulación de fútbol desarrollado por EA Canada y publicado por EA Sports",
-        "image": "req.body.filename()",
+        "image": "image",
         "category": "Deportes",
         "rating": "1",
         "platform": "PC",
-        "price": "6.555"
+        "price": "6.477"
     },
     {
         "id": "2",
@@ -48,55 +48,5 @@
         "rating": "4",
         "platform": "PC",
         "price": "5.000"
-    },
-    {
-        "id": "sua5eMPdf",
-        "name": "Dark Souls III",
-        "description": "Es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment ",
-        "image": "req.body.filename()",
-        "category": "Rol/Accion",
-        "rating": "1",
-        "platform": "PC",
-        "price": "4.200"
-    },
-    {
-        "id": "LkPu9TutY",
-        "name": "HOLAAA",
-        "description": "Es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment ",
-        "image": "req.body.filename()",
-        "category": "Rol/Accion",
-        "rating": "1",
-        "platform": "SI vos+_",
-        "price": "4.200"
-    },
-    {
-        "id": "cTqj2i_w6",
-        "name": "HOLAAA",
-        "description": "Es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment ",
-        "image": "req.body.filename()",
-        "category": "Rol/Accion",
-        "rating": "1",
-        "platform": "SI vos+_",
-        "price": "02565556555555555555"
-    },
-    {
-        "id": "x0Nrw9F6C",
-        "name": "HOLAAA",
-        "description": "Es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment ",
-        "image": "req.body.filename()",
-        "category": "Rol/Accion",
-        "rating": "1",
-        "platform": "SI vos+_",
-        "price": "02565556555555555555"
-    },
-    {
-        "id": "WRV5STZuR",
-        "name": "Dark Souls III",
-        "description": "Es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment ",
-        "image": "req.body.filename()",
-        "category": "Rol/Accion",
-        "rating": "1",
-        "platform": "wii",
-        "price": "4.200"
     }
 ]

@@ -1,82 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <%- include('../partials/head') -%>
-  <link rel="stylesheet" href="../css/cart.css" type="text/css" />
-</head>
+  <head>
+    <%- include('../partials/head') -%>
+    <link rel="stylesheet" href="/css/cart.css" type="text/css" />
+  </head>
 
-<body class="body__cart">
-<%- include('../partials/header_cart') -%>
-<main class="main__cart">
-  <section class="cart__navbar">
-    <div class="title">
-      <i class="fas fa-gamepad"></i><span><%= product.name %></span>
-    </div>
-    <div class="button-home">
-      <form action="/">
-        <button type="submit" value="Go to Home">Seguir Comprando</button>
-      </form>
-      <form method="GET" action="/products/edit/<%= product.id %>">
-        <input type="submit" value="Editar" name="Editar" class="btn-editar">
-      </form>
-      <form method="POST" action="/products/<%= product.id %>?_method=DELETE">
-        <input type="submit" value="Eliminar" name="Eliminar" class="btn-editar2">
-      </form> 
-    </div>
-  </section>
+  <body class="body__cart">
+    <%- include('../partials/header_cart') -%>
+    <main class="main__cart">
+      <section class="cart__navbar">
+        <div class="title">
+          <i class="fas fa-gamepad"></i><span><%= product.name %></span>
+        </div>
+        <div class="button-home">
+          <form action="/">
+            <button type="submit" value="Go to Home">Seguir Comprando</button>
+          </form>
+          <form method="GET" action="/products/edit/<%= product.id %>">
+            <input
+              type="submit"
+              value="Editar"
+              name="Editar"
+              class="btn-editar"
+            />
+          </form>
+          <form
+            method="POST"
+            action="/products/<%= product.id %>?_method=DELETE"
+          >
+            <input
+              type="submit"
+              value="Eliminar"
+              name="Eliminar"
+              class="btn-editar2"
+            />
+          </form>
+        </div>
+      </section>
 
-  <section class="cart__container">
-    <div class="cart__item">
-      <div class="cart__product__img">
-        <img src="/img/products/<%= product.image %>" alt="" />
-      </div>
-      <div class="cart__content">
-        <div class="cart__product__title">
-          <span><%= product.name %></span>
-        </div>
-        <div class="cart__product__rating">
-
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="cart__product__category">
-          <span class="cart__product__category">Category: </span>
-          <span class="span__name"><%= product.category %></span>
-        </div>
-        <div class="cart__product__description">
-          <%= product.description %>
-        </div>
-        <div class="cart__product__buy">
-          <div class="cart__item__count">
-            <button><i class="fas fa-minus"></i></button>
-            <input type="text" name="cart-item-count" placeholder="1" />
-            <button><i class="fas fa-plus"></i></button>
+      <section class="cart__container">
+        <div class="cart__item">
+          <div class="cart__product__img">
+            <img src="/img/products/<%= product.image %>" alt="" />
           </div>
-          <div>
-            <a href="/cart" class="nav-links">
-              <span class="span__name">ADD TO CART</span>
-              <i class="fas fa-cart-plus"></i>
-            </a>
+          <div class="cart__content">
+            <div class="cart__product__title">
+              <span><%= product.name %></span>
+            </div>
+            <div class="cart__product__rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="cart__product__category">
+              <span class="cart__product__category">Category: </span>
+              <span class="span__name"><%= product.category %></span>
+            </div>
+            <div class="cart__product__description">
+              <%= product.description %>
+            </div>
+            <div class="cart__product__buy">
+              <div class="cart__item__count">
+                <button><i class="fas fa-minus"></i></button>
+                <input type="text" name="cart-item-count" placeholder="1" />
+                <button><i class="fas fa-plus"></i></button>
+              </div>
+              <div>
+                <a href="/cart" class="nav-links">
+                  <span class="span__name">ADD TO CART</span>
+                  <i class="fas fa-cart-plus"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="cart__checkout__container">
-    <form action="/buy">
-      <div class="cart__checkout__total">
-        <span class="checkout__span__price">$<%= product.price %></span>
-      </div>
-      <div class="cart__checkout">
-        <button type="submit" value="Go to Home">COMPRAR</button>
-      </div>
-    </form>
-  </section>
-</main>
-<%- include('../partials/footer') -%>
-</body>
+      <section class="cart__checkout__container">
+        <form action="/buy">
+          <div class="cart__checkout__total">
+            <span class="checkout__span__price">$<%= product.price %></span>
+          </div>
+          <div class="cart__checkout">
+            <button type="submit" value="Go to Home">COMPRAR</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <%- include('../partials/footer') -%>
+  </body>
 </html>

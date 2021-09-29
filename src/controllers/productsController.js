@@ -33,7 +33,7 @@ const controller = {
             id: shortid.generate(),
             name: req.body.name,
             description: req.body.description,
-            image: "req.body.filename()",
+            image: req.file.filename,
             category: req.body.category,
             rating: req.body.rating,
             platform: req.body.platform,
@@ -50,16 +50,50 @@ const controller = {
 
     // Update - Form to edit
     edit: (req, res) => {
-        // Do the magic
+        const id = req.params.id;
+        const image = req.file;
+        const imgProductById = products.findIndex((item) => item.id === id);
+        const { name, description, category, rating, platform, price, } = req.body;
+
+        products[imgProductById] = {
+            id: id,
+            name: name,
+            description: description,
+
+            image: req.file.filename,
+
+            category: category,
+            rating: rating,
+            platform: platform,
+            price: price
+        };
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 4), { encoding: "utf-8" });
+        res.render('products/productsList', { products });
     },
     // Update - Method to update
-    update: (req, res) => {
-        // Do the magic
+    getEdit: (req, res) => {
+        const id = req.params.id;
+        const imgProductById = products.find((item) => item.id === id);
+        res.render('products/productsEdit', { products: imgProductById });
+
     },
 
     // Delete - Delete one product from DB
-    destroy: (req, res) => {
-        // Do the magic
+    delete: (req, res) => {
+        const id = req.params.id;
+        const newProducts = products.filter((item) => item.id != id);
+
+
+        fs.writeFileSync(
+            path.join(__dirname, '../database/products.json'),
+            JSON.stringify(newProducts, null, 4),
+            {
+                encoding: "utf8",
+            }
+        );;
+
+
+        res.render('products/productsList', { products: newProducts });
     }
 };
 

@@ -1,21 +1,21 @@
 [
     {
         "id": "1",
-        "name": "FIFA 22",
+        "name": "FIFA 222",
         "description": "Es un videojuego de simulación de fútbol desarrollado por EA Canada y publicado por EA Sports",
-        "image": "fifa22_cover.jpg",
+        "image": "image-1632881048459-5886110002266-fifa22_cover.jpg",
         "category": "Deportes",
-        "rating": "5",
+        "rating": "4",
         "platform": "PC",
-        "price": "6.555"
+        "price": "6.477"
     },
     {
         "id": "2",
         "name": "DMC: Devil May Cry",
         "description": "Es un videojuego de hack and slash y beat 'em up desarrollado por Ninja Theory y distribuido por Capcom",
-        "image": "DMC_cover.jpg",
+        "image": "image-1632881601219-8514248515642-DMC_cover.jpg",
         "category": "Accion",
-        "rating": "4",
+        "rating": "5",
         "platform": "PC",
         "price": "5.555"
     },
@@ -23,19 +23,19 @@
         "id": "3",
         "name": "Dark Souls III",
         "description": "Es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment ",
-        "image": "DS3_cover.jpg",
+        "image": "image-1632881578633-8097481045986-DS3_cover.jpg",
         "category": "Rol/Accion",
-        "rating": "4",
+        "rating": "1",
         "platform": "PC",
-        "price": "4.200"
+        "price": "4.250"
     },
     {
         "id": "4",
         "name": "Grand Theft Auto V",
         "description": "Es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games",
-        "image": "GTAV_cover.jpg",
+        "image": "image-1632881771627-8081242115817-GTAV_cover.jpg",
         "category": "Accion/Aventura",
-        "rating": "4",
+        "rating": "1",
         "platform": "PC",
         "price": "3.500"
     },
@@ -50,13 +50,13 @@
         "price": "5.000"
     },
     {
-        "id": "6",
-        "name": "Escape From Tarkov",
-        "description": "Es un simulador de combate que mezcla acción en primera persona con elementos RPG dentro de un MMO con desarrollo narrativo. También hay quien lo considera un videojuego de suspense debido a la tensión característica de ese juego, semejante a la que provocan juegos de terror o suspenso",
-        "image": "Tarkov_cover.jpg",
-        "category": "Combate",
-        "rating": "4",
+        "id": "rE_jl8z73",
+        "name": "NEWGAME",
+        "description": "BESTGAME",
+        "image": "image-1632880112915-140033535spiderman.jpg",
+        "category": "ACCION",
+        "rating": "2",
         "platform": "PC",
-        "price": "2.000"
+        "price": "2550"
     }
 ]

@@ -2,26 +2,31 @@
 <html lang="es">
   <head>
     <%- include('../partials/head') -%>
-    <link rel="stylesheet" href="../css/create.css" type="text/css" />
+    <link rel="stylesheet" href="/css/create.css" type="text/css" />
   </head>
 
   <body class="body__create">
     <%- include('../partials/header_register') -%>
     <main class="main__create">
-      <div class="titulo-create">PRODUCT CREATION</div>
+      <div class="titulo-create">PRODUCT EDIT</div>
       <form
-        action="/products/store"
+        action="/products/<%= products.id %>?_method=PUT"
         method="POST"
         class="create-form"
         enctype="multipart/form-data"
       >
+        <input type="hidden" name="id" />
         <div>
           <label>NOMBRE</label>
-          <input type="text" name="name" />
+          <input type="text" name="name" value="<%= products.name%>" />
         </div>
         <div>
           <label>DESCRIPCION</label>
-          <input type="text" name="description" />
+          <input
+            type="text"
+            name="description"
+            value="<%= products.description%>"
+          />
         </div>
         <div>
           <label>IMAGE</label>
@@ -29,11 +34,11 @@
         </div>
         <div>
           <label>CATEGORIA</label>
-          <input type="text" name="category" />
+          <input type="text" name="category" value="<%= products.category%>" />
         </div>
 
         <div>
-          <label for="rating">RATING</label>
+          <label for="rating" value="<%= products.rating%>">RATING</label>
           <select name="rating">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -45,14 +50,14 @@
 
         <div>
           <label>PLATAFORMA </label>
-          <input type="text" name="platform" />
+          <input type="text" name="platform" value="<%= products.platform%>" />
         </div>
 
         <div>
           <label>PRECIO</label>
-          <input type="text" name="price" />
+          <input type="text" name="price" value="<%= products.price%>" />
         </div>
-        <button type="submit" name="button" value="REGISTRAR">REGISTRAR</button>
+        <button type="submit" name="button" value="SAVE">SAVE</button>
         <button type="reset" name="button" value="RESET">RESET</button>
       </form>
     </main>

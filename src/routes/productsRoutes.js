@@ -35,6 +35,12 @@ router.post('/store', upload.single('image'), productsController.store);
 // Product Details Route
 router.get('/:id', productsController.detail);
 
+// Product Edit
+router.get("/edit/:id", productsController.getEdit)
+router.put('/:id',upload.single("Imagen"), productsController.edit)
+
+// Product Delete
+router.delete('/:id', productsController.delete)
 
 
 module.exports = router;

@@ -4,7 +4,7 @@
   "description": "Ecommerce de consolas y video juegos",
   "main": "src/app.js",
   "scripts": {
-    "start": "node ./src/app.js",
+    "start": "nodemon ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "produ": "node ./src/app.js"
   },

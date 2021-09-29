@@ -16,6 +16,12 @@
       <form action="/">
         <button type="submit" value="Go to Home">Seguir Comprando</button>
       </form>
+      <form method="GET" action="/products/edit/<%= product.id %>">
+        <input type="submit" value="Editar" name="Editar" class="btn-editar">
+      </form>
+      <form method="POST" action="/products/<%= product.id %>?_method=DELETE">
+        <input type="submit" value="Eliminar" name="Eliminar" class="btn-editar2">
+      </form> 
     </div>
   </section>
 

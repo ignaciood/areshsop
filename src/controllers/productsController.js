@@ -51,6 +51,7 @@ const controller = {
     // Update - Form to edit
     edit: (req, res) => {
         const id = req.params.id;
+        const image = req.file;
         const imgProductById = products.findIndex((item) => item.id === id);
         const { name, description, category, rating, platform, price } = req.body;
 
@@ -58,7 +59,7 @@ const controller = {
             id: id,
             name: name,
             description: description,
-            image: "image",
+            image: image,
             category: category,
             rating: rating,
             platform: platform,

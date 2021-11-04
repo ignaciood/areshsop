@@ -60,11 +60,33 @@
   text-decoration: none;
   background-color: var(--white);
   font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  margin: 3px;
 }
 .button-home button:hover {
   color: var(--white);
   border: solid var(--strongviolet) 2px;
   background-color: #e30428;
+}
+.btn-editar{
+  color: var(--strongviolet);
+  font-size: 1rem;
+  padding: 10px 15px 10px 15px;
+  border: solid var(--strongviolet) 2px;
+  text-decoration: none;
+  background-color: var(--white);
+  font-weight: bold;
+}
+.btn-editar2{
+  color: #e30428;
+  font-size: 1rem;
+  padding: 10px 15px 10px 15px;
+  border: solid var(--strongviolet) 2px;
+  text-decoration: none;
+  background-color: var(--white);
+  font-weight: bold;
+  margin: 3px;
 }
 /* ENDS CART NAVBAR*/
 .cart__container {

@@ -1,62 +1,62 @@
 [
     {
-        "id": "b93574b3-b428-4c8b-be22-00d5df87ba11",
-        "name": "FIFA 21",
-        "description": "Juego de Futbol",
-        "image": "image-1632368689538-8235850211945-fifa22_cover.jpg",
-        "category": "deportes",
+        "id": "1",
+        "name": "FIFA 22",
+        "description": "Es un videojuego de simulación de fútbol desarrollado por EA Canada y publicado por EA Sports",
+        "image": "fifa22_cover.jpg",
+        "category": "Deportes",
         "rating": "5",
         "platform": "PC",
-        "price": "2550"
+        "price": "6.555"
     },
     {
-        "id": "093a39bd-3255-416c-a476-0e5afd001cd4",
+        "id": "2",
         "name": "DMC: Devil May Cry",
-        "description": "Juego de Aventura",
-        "image": "image-1632369531263-9285745813212-DMC_cover.jpg",
+        "description": "Es un videojuego de hack and slash y beat 'em up desarrollado por Ninja Theory y distribuido por Capcom",
+        "image": "DMC_cover.jpg",
         "category": "Accion",
-        "rating": "5",
+        "rating": "4",
         "platform": "PC",
-        "price": "2345"
+        "price": "5.555"
     },
     {
-        "id": "557c6531-c6d4-48a0-8b18-220eddf0333d",
+        "id": "3",
         "name": "Dark Souls III",
-        "description": "Juego de Accion y Rol",
-        "image": "image-1632369597704-8867046118525-DS3_cover.jpg",
-        "category": "Accion",
+        "description": "Es un videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment ",
+        "image": "DS3_cover.jpg",
+        "category": "Rol/Accion",
         "rating": "4",
         "platform": "PC",
-        "price": "2152"
+        "price": "4.200"
     },
     {
-        "id": "fcc39eb2-9520-4e12-ad09-5758e1dceee8",
+        "id": "4",
         "name": "Grand Theft Auto V",
-        "description": "Juego de Aventura",
-        "image": "image-1632369630760-6607925474558-GTAV_cover.jpg",
-        "category": "Accion",
-        "rating": "5",
-        "platform": "PC",
-        "price": "2275"
-    },
-    {
-        "id": "b8aa1a29-8e5e-4df2-b9d4-b8389baa69a6",
-        "name": "Monster Hunter: World",
-        "description": "Juego de Aventura",
-        "image": "image-1632369757476-4881064031348-MHW_cover.jpg",
-        "category": "Accion",
-        "rating": "1",
-        "platform": "PC",
-        "price": "2453"
-    },
-    {
-        "id": "bd491752-12c4-47e6-8817-5a77114061cc",
-        "name": "Escape From Tarkov",
-        "description": "Juego de Accion",
-        "image": "image-1632369803709-292818567404-Tarkov_cover.jpg",
-        "category": "Shooter",
+        "description": "Es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games",
+        "image": "GTAV_cover.jpg",
+        "category": "Accion/Aventura",
         "rating": "4",
         "platform": "PC",
-        "price": "2290"
+        "price": "3.500"
+    },
+    {
+        "id": "5",
+        "name": "Monster Hunter: World",
+        "description": "Es un videojuego perteneciente al género de rol y acción, desarrollado y publicado por la empresa Capcom, siendo el sexto título principal de la franquicia de videojuegos Monster Hunter",
+        "image": "MHW_cover.jpg",
+        "category": "Accion/Rol",
+        "rating": "4",
+        "platform": "PC",
+        "price": "5.000"
+    },
+    {
+        "id": "6",
+        "name": "Escape From Tarkov",
+        "description": "Es un simulador de combate que mezcla acción en primera persona con elementos RPG dentro de un MMO con desarrollo narrativo. También hay quien lo considera un videojuego de suspense debido a la tensión característica de ese juego, semejante a la que provocan juegos de terror o suspenso",
+        "image": "Tarkov_cover.jpg",
+        "category": "Combate",
+        "rating": "4",
+        "platform": "PC",
+        "price": "2.000"
     }
 ]

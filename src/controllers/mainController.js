@@ -14,7 +14,7 @@ const controller = {
 
     // Detail from one product
     detail: (req, res) => {
-        res.render('productdetails');
+        res.render('productdetail');
     },
 
     // Cart

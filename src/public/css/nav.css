@@ -1,13 +1,15 @@
-/* Color palette */
 :root {
-  --lightblue: rgb(219, 34, 42);
-  --darkblue: #1d252c;
-  --grey: #82869a;
-  --lightgrey: #e5e5e5;
-  --lightviolet: #e30428;
-  --strongviolet: #e30428;
-  --fontcolor: #262626;
-}
+    --red: #e30428;
+    --darkblue: #1D252C;
+    --grey: #82869A;
+    --white: #E5E5E5;
+    --fontcolor: #262626;
+ }
+
+ body {
+    font-family: Barlow, sans-serif;
+  }
+
 
 body {
   font-family: Barlow, sans-serif;
@@ -166,15 +168,20 @@ body {
   .navbar-toggle {
     display: none;
   }
+  
+  .search-icon {
+    color: var(--red);
+    align-self: flex-end;
+    padding-left: 10px;
+  }
 
   .logo:hover,
   .nav-links:hover {
     color: var(--grey);
   }
-
-  .logo:hover,
-  .nav-links i:hover {
-    color: var(--grey);
+  
+  .nav-links i {
+      color: var(--red);
   }
   .search {
     width: 50%;

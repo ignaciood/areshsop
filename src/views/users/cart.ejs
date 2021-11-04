@@ -5,14 +5,25 @@
     <link rel="stylesheet" href="./css/cart.css" type="text/css" />
   </head>
   <body class="body__cart">
+<<<<<<< HEAD
     <%- include('../partials/header') -%>
+=======
+    <%- include('../partials/header_cart') -%>
+>>>>>>> master
     <main class="main__cart">
       <section class="cart__navbar">
         <div class="title">
           <i class="fas fa-shopping-cart"></i><span>Carrito de compras</span>
         </div>
+<<<<<<< HEAD
         <div class="button">
           <button type="submit">Seguir Comprando</button>
+=======
+        <div class="button-home">
+          <form action="/">
+            <button type="submit" value="Go to Home">Seguir Comprando</button>
+          </form>
+>>>>>>> master
         </div>
       </section>
 
@@ -35,10 +46,13 @@
               <span>Description</span>
             </div>
             <div class="cart__product__buy">
+<<<<<<< HEAD
               <div class="cart__item__price">
                 <span class="span__name">Precio</span>
                 <span class="span__price">$2.555</span>
               </div>
+=======
+>>>>>>> master
               <div class="cart__item__count">
                 <button><i class="fas fa-minus"></i></button>
                 <input type="text" name="cart-item-count" placeholder="1" />
@@ -53,6 +67,7 @@
       </section>
 
       <section class="cart__checkout__container">
+<<<<<<< HEAD
         <div class="cart__discount">
           <input
             type="text"
@@ -68,6 +83,27 @@
         <div class="cart__checkout">
           <button>Pagar</button>
         </div>
+=======
+        <form action="/cupon-de-descuento">
+          <div class="cart__discount">
+            <input
+                    type="text"
+                    name="cart-discount"
+                    placeholder="Cupon de descuento"
+            />
+              <button type="submit" value="Go to Home">ADD</button>
+          </div>
+        </form>
+        <form action="/buy">
+          <div class="cart__checkout__total">
+            <span class="checkout__span__name">Total</span>
+            <span class="checkout__span__price">$6.555</span>
+          </div>
+          <div class="cart__checkout">
+              <button type="submit" value="Go to Home">COMPRAR</button>
+          </div>
+        </form>
+>>>>>>> master
       </section>
     </main>
     <%- include('../partials/footer') -%>

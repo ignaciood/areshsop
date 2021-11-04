@@ -3,9 +3,9 @@ const fs = require('fs');
 // Call Path module
 const path = require('path');
 // Call Id generation module
-const { v4: uuid_v4 } = require('uuid');
+const shortid = require('shortid')
 
-// Set FilePath of Database and Parse to JSON
+
 const productsFilePath = path.join(__dirname, '../database/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
@@ -17,8 +17,8 @@ const controller = {
 
     // Detail - Detail from one product
     detail: (req, res) => {
-        const detailProductById = products.find(element => element.id === req.params.id);
-        res.render('products/productsDetail', { product: detailProductById });
+        const imgProductById = products.find(element => element.id === req.params.id);
+        res.render('products/productsDetail', { product: imgProductById });
     },
 
     // Create - Form to create
@@ -30,10 +30,10 @@ const controller = {
     store: (req, res) => {
         // Product Database Schema and catch data from create product form
         const newProduct = {
-            id: uuid_v4(),
+            id: shortid.generate(),
             name: req.body.name,
             description: req.body.description,
-            image: req.file.filename,
+            image: "req.body.filename()",
             category: req.body.category,
             rating: req.body.rating,
             platform: req.body.platform,

@@ -46,11 +46,6 @@
   background-color: var(--strongviolet);
 }
 
-.nav-text{
-  color:red;
-  font-weight: bold;
-}
-
 
 .button-home button {
   color: var(--strongviolet);
@@ -59,10 +54,9 @@
   border: solid var(--strongviolet) 2px;
   text-decoration: none;
   background-color: var(--white);
-  font-weight: bold;
 }
 .button-home button:hover {
-  color: var(--white);
+  color: var(--strongviolet);
   border: solid var(--strongviolet) 2px;
   background-color: #e30428;
 }
@@ -92,19 +86,26 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 10px;
 }
 .cart__product__title {
   font-size: 2rem;
+  padding: 5px;
 }
 .cart__product__description {
-  display: none;
+  display: flex;
+  color: var(--red);
 }
+.cart__product__category{
+  color: var(--red);
+}
+
+
 .cart__product__buy {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  width: 280%;
+  padding: 15px;
 }
 .cart__item__price {
   display: flex;
@@ -123,7 +124,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 8%;
+  justify-content: center;
+  width: 25%;
 }
 .cart__item__count input[type="text"] {
   border: none;
@@ -138,22 +140,6 @@
   border: none;
   font-size: 1.3rem;
   cursor: pointer;
-}
-
-.cart__product__description {
-  display: block;
-  color: var(--red);
-  font-weight: bold ;
-}
-
-.cart__product__category{
-  color: black;
-  font-weight: bold ;
-}
-
-.span__name{
-  color: var(--red);
-  font-size: 16px;
 }
 
 .cart__product__rating {
@@ -231,7 +217,11 @@
   color: #fff;
   font-size: 1.3rem;
   text-decoration: none;
+  background-color: var(--red);
+  border: none;
+  padding: 10px;
   width: 50%;
+  border-radius: 7px;
 }
 
 .cart__checkout button:hover {
@@ -241,6 +231,14 @@
   background-color: green;
 }
 
+.cart__product__description {
+  display: block;
+  color: var(--red);
+}
+
+.cart__product__description>div {
+  color: red;
+}
 
 
 /* MEDIA QUERYS*/
@@ -263,6 +261,7 @@
   }
   .cart__product__description {
     display: block;
+    color: var(--red);
   }
   .cart__discount {
     align-self: center;
@@ -276,6 +275,10 @@
     align-items: baseline;
   }
   .cart__checkout button {
+  }
+
+  .cart__product__description div {
+    color: red;
   }
 }
 

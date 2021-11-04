@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<<<<<<< HEAD
   <head>
     <%- include('../partials/head') -%>
   </head>
@@ -43,3 +44,59 @@
     <%- include('../partials/footer') -%>
   </body>
 </html>
+=======
+<head>
+  <%- include('../partials/head') -%>
+  <link rel="stylesheet" href="../css/create.css" type="text/css" />
+</head>
+
+<body class="body__create">
+<%- include('../partials/header_register') -%>
+<main class="main__create">
+  <div class="titulo-create">PRODUCT CREATION</div>
+  <form action="/products/store" method="POST" class="create-form" enctype="multipart/form-data">
+    <div>
+      <label>NOMBRE</label>
+      <input type="text" name="name">
+    </div>
+    <div>
+      <label>DESCRIPCION</label>
+      <input type="text" name="description">
+    </div>
+    <div>
+      <label>IMAGE</label>
+      <input type="file" name="image">
+    </div>
+    <div>
+      <label>CATEGORIA</label>
+      <input type="text" name="category">
+    </div>
+
+    <div>
+      <label for="rating">RATING</label>
+      <select name="rating">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div>
+      <label>PLATAFORMA </label>
+      <input type="text" name="platform">
+    </div>
+
+    <div>
+      <label>PRECIO</label>
+      <input type="text" name="price">
+    </div>
+    <button type="submit" name="button" value="REGISTRAR">REGISTRAR</button>
+    <button type="reset" name="button" value="RESET">RESET</button>
+  </form>
+</main>
+<%- include('../partials/footer') -%>
+</body>
+</html>
+>>>>>>> master

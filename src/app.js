@@ -43,4 +43,7 @@ app.use('/products', productsRouter);
 app.listen(PORT, () => {
     console.log(`Server running on port: ${PORT}`);
 })
+<<<<<<< HEAD
 
+=======
+>>>>>>> master

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <%- include('partials/head') -%>
-    <link rel="stylesheet" href="./css/index.css" type="text/css" />
-  </head>
 
-  <body class="body__index">
-    <%- include('partials/header') -%>
+<head>
+  <%- include('partials/head') -%>
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+</head>
+
+<body class="body__index">
+  <%- include('partials/header') -%>
 
     <main class="main__index">
       <section class="bestseller__wrapper">
@@ -15,49 +16,37 @@
         </div>
 
         <div class="cards__container">
-<<<<<<< HEAD
-          <% products.forEach(function(products){ %> <%-
-          include('partials/mainCard', {products}) %> <% }); %>
-        </div>
-      </section>
-
-=======
           <div class="triangulo izquierda">
             <div></div>
           </div>
-          <% products.forEach(function(products){ %> <%-
-          include('partials/mainCard', {products}) %> <% }); %>
-            <div class="triangulo derecha">
-              <div></div>
-            </div>
+          <% products.forEach(function(products){ %>
+            <%- include('partials/mainCard', {products}) %>
+              <% }); %>
+                <div class="triangulo derecha">
+                  <div></div>
+                </div>
         </div>
       </section>
->>>>>>> master
       <section class="bestseller__wrapper">
         <div class="bestseller__title">
           <span>Mas Valorados</span>
         </div>
 
         <div class="cards__container">
-<<<<<<< HEAD
-          <% products.forEach(function(products){ %> <%-
-          include('partials/mainCard', {products}) %> <% }); %>
-        </div>
-      </section>
-=======
           <div class="triangulo izquierda">
             <div></div>
           </div>
-          <% products.forEach(function(products){ %> <%-
-          include('partials/mainCard', {products}) %> <% }); %>
-            <div class="triangulo derecha">
-              <div></div>
-            </div>
+          <% products.forEach(function(products){ %>
+            <%- include('partials/mainCard', {products}) %>
+              <% }); %>
+                <div class="triangulo derecha">
+                  <div></div>
+                </div>
         </div>
       </section>
 
->>>>>>> master
     </main>
     <%- include('partials/footer') -%>
-  </body>
+</body>
+
 </html>

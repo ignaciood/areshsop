@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <head>
-    <%- include('../partials/head') -%>
-  </head>
 
-  <body>
-    <%- include('../partials/header') -%>
+<head>
+  <%- include('../partials/head') -%>
+</head>
+
+<body>
+  <%- include('../partials/header') -%>
     <main>
       <div class="navbar-products">
         <div><input type="search" /><button>Search</button></div>
@@ -19,44 +18,46 @@
         <p>Products List</p>
       </div>
       <div class="cards__container">
-        <% products.forEach(function(products){ %> <%- include('./productsCard',
-        {products}) %> <% }); %>
+        <% products.forEach(function(products){ %>
+          <%- include('./productsCard', {products}) %>
+            <% }); %>
       </div>
     </main>
     <%- include('../partials/footer') -%>
-  </body>
-=======
+</body>
+
 <head>
   <%- include('../partials/head') -%>
-  <link rel="stylesheet" href="./css/register.css" type="text/css" />
+    <link rel="stylesheet" href="./css/register.css" type="text/css" />
 </head>
 
 <body class="body__register">
-<%- include('../partials/header_products') -%>
-<main class="main__register">
-  <div class="cards__container">
-    <% products.forEach(function(products){ %> <%- include('./productsCard',
-    {products}) %> <% }); %>
-  </div>
-</main>
-<%- include('../partials/footer') -%>
-</body>
->>>>>>> master
-=======
-  <head>
-    <%- include('../partials/head') -%>
-    <link rel="stylesheet" href="/css/register.css" type="text/css" />
-  </head>
-
-  <body class="body__register">
-    <%- include('../partials/header_products') -%>
+  <%- include('../partials/header_products') -%>
     <main class="main__register">
       <div class="cards__container">
-        <% products.forEach(function(products){ %> <%- include('./productsCard',
-        {products}) %> <% }); %>
+        <% products.forEach(function(products){ %>
+          <%- include('./productsCard', {products}) %>
+            <% }); %>
       </div>
     </main>
     <%- include('../partials/footer') -%>
-  </body>
->>>>>>> 55cb93d5a787ded6131a93ea9573c59ce5c8ac02
+</body>
+
+<head>
+  <%- include('../partials/head') -%>
+    <link rel="stylesheet" href="/css/register.css" type="text/css" />
+</head>
+
+<body class="body__register">
+  <%- include('../partials/header_products') -%>
+    <main class="main__register">
+      <div class="cards__container">
+        <% products.forEach(function(products){ %>
+          <%- include('./productsCard', {products}) %>
+            <% }); %>
+      </div>
+    </main>
+    <%- include('../partials/footer') -%>
+</body>
+
 </html>

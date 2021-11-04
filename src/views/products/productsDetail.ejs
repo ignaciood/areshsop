@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <head>
-    <%- include('../partials/head') -%>
-  </head>
 
-  <body>
-    <%- include('../partials/header') -%>
+<head>
+  <%- include('../partials/head') -%>
+</head>
+
+<body>
+  <%- include('../partials/header') -%>
     <main>
       <div class="navbar-products">
         <div><input type="search" /><button>Search</button></div>
@@ -22,57 +21,41 @@
       <div>
         <!-- prettier-ignore -->
         <%= product.name %>
-        <%= product.description %>
-        <%= product.image %>
-        <%= product.category %>
-        <%= product.rating %>
-        <%= product.platform %>
-        <%= product.price %>
+          <%= product.description %>
+            <%= product.image %>
+              <%= product.category %>
+                <%= product.rating %>
+                  <%= product.platform %>
+                    <%= product.price %>
       </div>
     </main>
     <%- include('../partials/footer') -%>
-  </body>
-=======
+</body>
+
 <head>
   <%- include('../partials/head') -%>
-  <link rel="stylesheet" href="../css/cart.css" type="text/css" />
-</head>
-=======
-  <head>
-    <%- include('../partials/head') -%>
     <link rel="stylesheet" href="/css/cart.css" type="text/css" />
-  </head>
->>>>>>> 55cb93d5a787ded6131a93ea9573c59ce5c8ac02
+</head>
 
-  <body class="body__cart">
-    <%- include('../partials/header_cart') -%>
+
+<body class="body__cart">
+  <%- include('../partials/header_cart') -%>
     <main class="main__cart">
       <section class="cart__navbar">
         <div class="title">
-          <i class="fas fa-gamepad"></i><span><%= product.name %></span>
+          <i class="fas fa-gamepad"></i><span>
+            <%= product.name %>
+          </span>
         </div>
         <div class="button-home">
           <form action="/">
             <button type="submit" value="Go to Home">Seguir Comprando</button>
           </form>
           <form method="GET" action="/products/edit/<%= product.id %>">
-            <input
-              type="submit"
-              value="Editar"
-              name="Editar"
-              class="btn-editar"
-            />
+            <input type="submit" value="Editar" name="Editar" class="btn-editar" />
           </form>
-          <form
-            method="POST"
-            action="/products/<%= product.id %>?_method=DELETE"
-          >
-            <input
-              type="submit"
-              value="Eliminar"
-              name="Eliminar"
-              class="btn-editar2"
-            />
+          <form method="POST" action="/products/<%= product.id %>?_method=DELETE">
+            <input type="submit" value="Eliminar" name="Eliminar" class="btn-editar2" />
           </form>
         </div>
       </section>
@@ -84,7 +67,9 @@
           </div>
           <div class="cart__content">
             <div class="cart__product__title">
-              <span><%= product.name %></span>
+              <span>
+                <%= product.name %>
+              </span>
             </div>
             <div class="cart__product__rating">
               <i class="fas fa-star"></i>
@@ -95,7 +80,9 @@
             </div>
             <div class="cart__product__category">
               <span class="cart__product__category">Category: </span>
-              <span class="span__name"><%= product.category %></span>
+              <span class="span__name">
+                <%= product.category %>
+              </span>
             </div>
             <div class="cart__product__description">
               <%= product.description %>
@@ -117,22 +104,6 @@
         </div>
       </section>
 
-<<<<<<< HEAD
-  <section class="cart__checkout__container">
-    <form action="/buy">
-      <div class="cart__checkout__total">
-        <span class="checkout__span__price">$<%= product.price %></span>
-      </div>
-      <div class="cart__checkout">
-        <button type="submit" value="Go to Home">COMPRAR</button>
-      </div>
-    </form>
-  </section>
-</main>
-<%- include('../partials/footer') -%>
-</body>
->>>>>>> master
-=======
       <section class="cart__checkout__container">
         <form action="/buy">
           <div class="cart__checkout__total">
@@ -145,6 +116,6 @@
       </section>
     </main>
     <%- include('../partials/footer') -%>
-  </body>
->>>>>>> 55cb93d5a787ded6131a93ea9573c59ce5c8ac02
+</body>
+
 </html>

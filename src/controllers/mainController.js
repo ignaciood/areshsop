@@ -16,22 +16,6 @@ const controller = {
     detail: (req, res) => {
         res.render('productdetail');
     },
-
-    // Cart
-    cart: (req, res) => {
-        res.render('users/cart');
-
-    },
-
-    // Login
-    login: (req, res) => {
-        res.render('users/login');
-    },
-
-    // Register
-    register: (req, res) => {
-        res.render('users/register');
-    }
 };
 
 module.exports = controller;

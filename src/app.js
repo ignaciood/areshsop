@@ -5,6 +5,8 @@ const path = require('path');
 // Call routes
 const mainRouter = require('./routes/mainRoutes');
 const productsRouter = require('./routes/productsRoutes');
+const usersRouter = require('./routes/usersRoutes');
+
 // Call override method
 const methodOverride = require('method-override');
 
@@ -36,6 +38,8 @@ app.set('views', path.join(__dirname, './views'));
 // Use Routes
 // Main Routes
 app.use('/', mainRouter);
+// Users Routers
+app.use('/', usersRouter);
 // Products Routers for Admins
 app.use('/products', productsRouter);
 

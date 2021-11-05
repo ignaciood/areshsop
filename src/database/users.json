@@ -1,11 +1,18 @@
 [
     {
-        "id": "1",
-        "firstName": "Max",
-        "lastName": "Power",
-        "emial": "maxpower@rlz.com",
-        "password": "madmax",
-        "access": "root",
-        "userImage": "maxpower.jpg"
+        "id": "84ee2739-6ac8-43b5-8cc1-5cc9a0aeb5b8",
+        "name": "Jhon",
+        "nickname": "Shogun",
+        "email": "johnmr@gmail.com",
+        "password": "$2a$10$Ai.sQE2h2EWmHtAEmf6x4O3aQjaqyDMwL0BY5ELGcEGoRr0VOVvQu",
+        "userImage": "userimage-1636106088760-533022656-pumbaa.png"
+    },
+    {
+        "id": "6d514ded-18cb-4825-bfff-6b108f90c487",
+        "name": "Nor",
+        "nickname": "Shot",
+        "email": "gishu@norit.com",
+        "password": "$2a$10$Xlpm9lR/bCxAxw2yaJ4hcegELXX9RMFIfw57CSNtlzlM1o7dWzK9y",
+        "userImage": "userimage-1636107284349-332868587-velocidades.jpg"
     }
 ]

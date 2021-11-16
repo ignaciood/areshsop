@@ -253,11 +253,7 @@
   color: #fff;
   font-size: 1.3rem;
   text-decoration: none;
-  background-color: var(--red);
-  border: none;
-  padding: 10px;
   width: 50%;
-  border-radius: 7px;
 }
 
 .cart__checkout button:hover {

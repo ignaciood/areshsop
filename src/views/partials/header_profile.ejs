@@ -1,0 +1,38 @@
+<header>
+    <nav class="navbar">
+      <img src="/img/areshop_logo2.svg" class="logo" />
+      <ul class="main-nav" id="js-menu">
+        <% if (locals.isLogged) { %>
+          <li>
+            <a href="/" class="nav-links">
+              <i class="fa fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/cart" class="nav-links">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+              <a href="/logout" class="nav-links">
+                <span class="nav-text"> Log Out</span>
+                <i class="fas fa-sign-in-alt"></i>
+              </a>
+            </li>
+            </ul>
+          </li>
+        <% } else { %>
+          <li>
+            <a href="/register" class="nav-links">
+              <i class="fas fa-user-plus"></i>
+            </a>
+          </li>
+            <a href="/login" class="nav-links">
+              <span class="nav-text"> Sign In</span>
+              <i class="fas fa-sign-in-alt"></i>
+            </a>
+          </li>
+        <% } %>
+      </ul>
+    </nav>
+  </header>
+  

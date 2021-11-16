@@ -7,5 +7,35 @@
         "password": "madmax",
         "access": "root",
         "userImage": "maxpower.jpg"
+    },
+    {
+        "id": "987a9314-97b3-43b6-99b0-c551ff686ead",
+        "name": "Juan Ignacio",
+        "nickname": "Juan123",
+        "email": "nacho_albani@hotmail.com",
+        "userImage": "userimage-1636598529458-403621575-Edicion masiva.png"
+    },
+    {
+        "id": "a2850783-613d-4668-8ce3-dd14611f2433",
+        "name": "Lucio",
+        "nickname": "Luchito",
+        "email": "luchito@hotmail.com",
+        "password": "$2a$10$Hqz1/mTMgQ/hf4MexiLloO/kFVCzSUe1DkaTBz0Qjpne8Wm31CKWO",
+        "userImage": "userimage-1636746639206-996087923-Edicion masiva.png"
+    },
+    {
+        "id": "6f863da2-a193-4c83-91b4-7c455b49b863",
+        "name": "Lionel messi",
+        "nickname": "Lio",
+        "email": "lio@com.com",
+        "userImage": "userimage-1637016500620-292853192-Edicion masiva.png"
+    },
+    {
+        "id": "117ca0e4-3ee1-4594-a380-309bf7c61882",
+        "name": "Cr7",
+        "nickname": "Cr7",
+        "email": "Cr7@com.com",
+        "password": "$2a$10$RzGWFEkJwajGAVv0uBB5xuWO1UsvGIPihN292NKF8XsHlh5U8pVWG",
+        "userImage": "userimage-1637023016114-531807411-Edicion masiva.png"
     }
 ]

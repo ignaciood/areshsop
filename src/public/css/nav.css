@@ -1,15 +1,10 @@
 :root {
-    --red: #e30428;
-    --darkblue: #1D252C;
-    --grey: #82869A;
-    --white: #E5E5E5;
-    --fontcolor: #262626;
- }
-
- body {
-    font-family: Barlow, sans-serif;
-  }
-
+  --red: #e30428;
+  --darkblue: #1d252c;
+  --grey: #82869a;
+  --white: #e5e5e5;
+  --fontcolor: #262626;
+}
 
 body {
   font-family: Barlow, sans-serif;
@@ -24,6 +19,7 @@ body {
   font-size: 15px;
   padding-bottom: 10px;
   background-color: var(--fontcolor);
+  overflow: hidden;
 }
 
 .main-nav {
@@ -38,7 +34,7 @@ body {
   color: var(--fontcolor);
 }
 
-.logo2 {
+.logo {
   width: 15%;
   display: flex;
   justify-content: center;
@@ -167,7 +163,7 @@ body {
   .navbar-toggle {
     display: none;
   }
-  
+
   .search-icon {
     color: var(--red);
     align-self: flex-end;
@@ -178,9 +174,9 @@ body {
   .nav-links:hover {
     color: var(--grey);
   }
-  
+
   .nav-links i {
-      color: var(--red);
+    color: var(--red);
   }
   .search {
     width: 50%;
